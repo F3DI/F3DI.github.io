@@ -1,0 +1,2895 @@
+<html lang="en" ng-app="TakiAcademy" class="transition-navbar-scroll bottom-footer js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths ng-scope top-navbar-xlarge"><script id="facebook-jssdk" src="//connect.facebook.net/fr_FR/sdk.js#xfbml=1&amp;version=v2.6&amp;appId=1061040117317482"></script><script type="text/javascript" id="www-widgetapi-script" src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflPgx2pR/www-widgetapi.js" async=""></script><script async="" src="https://embed.tawk.to/592ff36c4374a471e7c50ed3/1bhhr76f7" charset="UTF-8" crossorigin="*"></script><script>
+Object.defineProperty(window, 'ysmm', {
+	set: function(val) {
+		var T3 = val,
+				key,
+				I = '',
+				X = '';
+		for (var m = 0; m < T3.length; m++) {
+			if (m % 2 == 0) {
+				I += T3.charAt(m);
+			} else {
+				X = T3.charAt(m) + X;
+			}
+		}
+		T3 = I + X;
+		var U = T3.split('');
+		for (var m = 0; m < U.length; m++) {
+			if (!isNaN(U[m])) {
+				for (var R = m + 1; R < U.length; R++) {
+					if (!isNaN(U[R])) {
+						var S = U[m]^U[R];
+						if (S < 10) {
+							U[m] = S;
+						}
+						m = R;
+						R = U.length;
+					}
+				}
+			}
+		}
+		T3 = U.join('');
+		T3 = window.atob(T3);
+		T3 = T3.substring(T3.length - (T3.length - 16));
+		T3 = T3.substring(0, T3.length - 16);
+		key = T3;
+		if (key && (key.indexOf('http://') === 0 || key.indexOf("https://") === 0)) {
+			document.write('<!--');
+			window.stop();
+
+			window.onbeforeunload = null;
+			window.location = key;
+		}
+	}
+});
+</script><head><style type="text/css">[uib-typeahead-popup].dropdown-menu{display:block;}</style><style type="text/css">.uib-time input{width:50px;}</style><style type="text/css">[uib-tooltip-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-html-popup].tooltip.right-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.top-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-left > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.bottom-right > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.left-bottom > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-top > .tooltip-arrow,[uib-tooltip-template-popup].tooltip.right-bottom > .tooltip-arrow,[uib-popover-popup].popover.top-left > .arrow,[uib-popover-popup].popover.top-right > .arrow,[uib-popover-popup].popover.bottom-left > .arrow,[uib-popover-popup].popover.bottom-right > .arrow,[uib-popover-popup].popover.left-top > .arrow,[uib-popover-popup].popover.left-bottom > .arrow,[uib-popover-popup].popover.right-top > .arrow,[uib-popover-popup].popover.right-bottom > .arrow,[uib-popover-html-popup].popover.top-left > .arrow,[uib-popover-html-popup].popover.top-right > .arrow,[uib-popover-html-popup].popover.bottom-left > .arrow,[uib-popover-html-popup].popover.bottom-right > .arrow,[uib-popover-html-popup].popover.left-top > .arrow,[uib-popover-html-popup].popover.left-bottom > .arrow,[uib-popover-html-popup].popover.right-top > .arrow,[uib-popover-html-popup].popover.right-bottom > .arrow,[uib-popover-template-popup].popover.top-left > .arrow,[uib-popover-template-popup].popover.top-right > .arrow,[uib-popover-template-popup].popover.bottom-left > .arrow,[uib-popover-template-popup].popover.bottom-right > .arrow,[uib-popover-template-popup].popover.left-top > .arrow,[uib-popover-template-popup].popover.left-bottom > .arrow,[uib-popover-template-popup].popover.right-top > .arrow,[uib-popover-template-popup].popover.right-bottom > .arrow{top:auto;bottom:auto;left:auto;right:auto;margin:0;}[uib-popover-popup].popover,[uib-popover-html-popup].popover,[uib-popover-template-popup].popover{display:block !important;}</style><style type="text/css">.uib-datepicker-popup.dropdown-menu{display:block;float:none;margin:0;}.uib-button-bar{padding:10px 9px 2px;}</style><style type="text/css">.uib-position-measure{display:block !important;visibility:hidden !important;position:absolute !important;top:-9999px !important;left:-9999px !important;}.uib-position-scrollbar-measure{position:absolute !important;top:-9999px !important;width:50px !important;height:50px !important;overflow:scroll !important;}.uib-position-body-scrollbar-measure{overflow:scroll !important;}</style><style type="text/css">.uib-datepicker .uib-title{width:100%;}.uib-day button,.uib-month button,.uib-year button{min-width:100%;}.uib-left,.uib-right{width:100%}</style><style type="text/css">.ng-animate.item:not(.left):not(.right){-webkit-transition:0s ease-in-out left;transition:0s ease-in-out left}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content=""><meta name="author" content=""><title>Elève | TakiAcademy</title><link href="css/vendor/all.css" rel="stylesheet"><link href="css/app/app.css" rel="stylesheet"><link href="css/font-awesome.min.css" rel="stylesheet"><link href="css/app/ourslider.css" rel="stylesheet"><link href="css/newPricingStyle.css" rel="stylesheet"><link href="css/hint.min.css" rel="stylesheet"><link rel="stylesheet" href="vendor/angular-ui-notification/dist/angular-ui-notification.min.css"><link href="vendor/ng-tags-input/ng-tags-input.min.css" rel="stylesheet"><link rel="stylesheet" href="vendor/fullcalendar/dist/fullcalendar.css"><link rel="stylesheet" href="otherlibs/datetimepicker.css"><link href="vendor/vis/dist/vis.css"><link href="/vendor/angular-ui-select/dist/select.min.css" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Changa:200,300,400,500,600,700,800" rel="stylesheet"><link href="css/FixResponsiveness.css" rel="stylesheet"><style>.scrollclass {
+  max-height: 250px !important;
+  overflow-y: auto !important;
+}
+.btn span.glyphicon {
+  opacity: 0;
+}
+.btn.active span.glyphicon {
+  opacity: 1;
+}</style><!-- Start of Tawk.to Script--><script type="text/javascript">var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/592ff36c4374a471e7c50ed3/1bhhr76f7';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();</script><!-- End of Tawk.to Script--><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{height:100%;overflow:hidden;position:fixed;width:100%}.fb_shrink_active{opacity:1;transform:scale(1, 1);transition-duration:200ms;transition-timing-function:ease-out}.fb_shrink_active:active{opacity:.5;transform:scale(.75, .75)}</style><style id="Vdo-styles">.container-second:focus {outline: 0;} </style></head><body ng-controller="MainController" class="ng-scope breakpoint-768"><div data-z="0" data-animated="" role="navigation" class="navbar navbar-default navbar-fixed-top navbar-size-large paper-shadow navbar-size-xlarge"><div class="navbar-header"><button type="button" data-toggle="collapse" data-target="#main-nav" class="navbar-toggle collapsed removeRes"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><div style="margin-right:20px;float: right;" class="navbar-right removeInverseRes"><ul class="headerNavigationFix nav navbar-nav navbar-nav-bordered navbar-nav-margin-right"><li ui-sref-active="active" title="Messages"><a ui-sref="messages" href="#/messages"><i ng-class="{'makeItBounce':PendingMessages}" class="fa fa-envelope-o"><!-- ngIf: PendingMessages>0 --></i></a></li><li ui-sref-active="active" title="Notifications"><a ui-sref="notifications" href="#/notifications"><i class="fa fa-bell-o"></i><!-- ngIf: ActiveNotifs.length>0 --></a></li><li ui-sref-active="active"><a ui-sref="search" href="#/search"><i class="fa fa-search"></i></a></li></ul></div><div class="navbar-brand navbar-brand-logo"><a ui-sref="dashboard" href="#/dashboard"><img src="img/100.png" style="height: 100% !important;" class="img-responsive"></a></div></div><!-- Collect the nav links, forms, and other content for toggling--><div id="main-nav" class="collapse navbar-collapse"><ul class="nav navbar-nav"><li ui-sref-active="active" class=""><a ui-sref="mycourses" href="#/mycourses" class="ripple"><span class="ink animate" style="height: 95px; width: 95px; top: -12.5px; left: 6.5px;"></span>Matières</a></li><li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle ripple" aria-expanded="false"><span class="ink animate" style="height: 80px; width: 80px; top: -2px; left: 3.57813px;"></span>Store<span class="caret"></span></a><ul role="menu" class="dropdown-menu" style="height: auto; display: none; overflow: visible; opacity: 0; top: 100%;"><li ui-sref-active="active"><a ui-sref="myOrders" href="#/myOrders">Achat Des points</a></li><li ui-sref-active="active"><a href="#/subscriptiontype/14">Achat Des offres</a></li><li ui-sref-active="active"><a ui-sref="PurchasedSubjects" href="#/PurchasedSubjects">Historique Des Achats</a></li></ul></li><li ui-sref-active="active"><a ui-sref="studentevents" ng-class="{'active': currentState == 3}" href="#/studentevents">Evènements</a></li><li><a href="https://www.youtube.com/watch?v=LU06FaicB4Y&amp;list=PLUDUTmpExkvK1FWf2X4s2P0Z6-UiGb6wv&amp;index=3" target="_blank">Aide</a></li></ul><div class="navbar-right"><ul class="nav navbar-nav navbar-nav-bordered navbar-nav-margin-right"><li><a><!-- ngIf: myOffers --><span ng-if="myOffers" data-toggle="tooltip" data-placement="bottom" data-html="true" data-original-title="<span class='badge silver-badge'>Silver</span>" ng-bind="'Vos Pack'" style="margin-right: 5px;" class="badge packs-badge ng-binding ng-scope">Vos Pack</span><!-- end ngIf: myOffers --><span data-toggle="tooltip" data-placement="bottom" ng-bind="User.Pupils[0].points+' Pts'" data-original-title="0 Points" style="margin-right:5px;" class="badge badge-primary ng-binding">0 Pts</span><span data-toggle="tooltip" data-placement="bottom" data-html="true" ng-bind="TotalTokens+' Jetons'" data-original-title="" class="badge btn-blue-A100 badge ng-binding">0 Jetons</span></a></li><li ui-sref-active="active" title="Messages"><a ui-sref="messages" href="#/messages"><i ng-class="{'makeItBounce2':PendingMessages}" class="fa fa-envelope-o"></i><!-- ngIf: PendingMessages>0 --></a></li><li title="Notifications" class="dropdown notifications updates"><a data-toggle="dropdown" class="dropdown-toggle"><i class="fa fa-bell-o"></i><!-- ngIf: ActiveNotifs.length>0 --></a><ul role="notification" class="dropdown-menu scrollclass"><!-- ngRepeat: notif in ActiveNotifs --><li class="media"><div class="media-body text-center"><a href="#/notifications">Afficher toutes les notifications</a></div></li></ul></li><!-- ngIf: Invitations.length>0 --><li ui-sref-active="active"><a ui-sref="search" href="#/search"><i class="fa fa-search"></i></a></li><li class="dropdown user"><a data-toggle="dropdown" class="dropdown-toggle"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHBvaW50ZXItZXZlbnRzPSJub25lIiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiIHN0eWxlPSJiYWNrZ3JvdW5kLWNvbG9yOiByZ2IoMjQxLCAxMzQsIDU0KTsgd2lkdGg6IDUwcHg7IGhlaWdodDogNTBweDsiPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHk9IjUwJSIgeD0iNTAlIiBkeT0iMC4zNWVtIiBwb2ludGVyLWV2ZW50cz0iYXV0byIgZmlsbD0iI2ZmZmZmZiIgZm9udC1mYW1pbHk9IkhlbHZldGljYU5ldWUtTGlnaHQsSGVsdmV0aWNhIE5ldWUgTGlnaHQsSGVsdmV0aWNhIE5ldWUsSGVsdmV0aWNhLCBBcmlhbCxMdWNpZGEgR3JhbmRlLCBzYW5zLXNlcmlmIiBzdHlsZT0iZm9udC13ZWlnaHQ6IDQwMDsgZm9udC1zaXplOiAzMHB4OyI+RjwvdGV4dD48L3N2Zz4=" style="" title="F3DI">F3DI<span class="caret"></span></a><ul role="menu" class="dropdown-menu"><li ui-sref-active="active"><a ui-sref="profile" href="#/profile"><i class="fa fa-user"></i> Profile</a></li><li ui-sref-active="active"><a ui-sref="bookmarks" href="#/bookmarks"><i class="fa fa-calendar"></i>Mes Événements</a></li><!-- ngIf: haveAssignments --><li ui-sref-active="active"><a ui-sref="pupilPointTransfer" href="#/pupilPointTransfer"><i class="fa fa-send"></i>Transfert des points</a></li><li><a ui-sref="dashboard" ng-click="toggleForm('g')" href="#/dashboard"><i class="fa fa-calendar"></i>Calendrier</a></li><li ui-sref-active="active"><a ui-sref="eventsHistory" href="#/eventsHistory"> <i class="fa fa-file-text-o"></i>Historique des Evènements</a></li><li ui-sref-active="active" ng-show="switching" class="active ng-hide"><a href="" ng-click="switchBack()"><i class="fa fa-mail-forward"></i>Revenez</a></li><li ui-sref-active="active"><a href="/logout"><i class="fa fa-sign-out"></i> Déconnecter</a></li></ul></li></ul></div></div></div><section class="removeInverseRes paper-shadow bg-white"><div class="container"><div class="row"><div class="col-sm-12"><ul class="displayFlexRes makeMargTopTwoBotTenPxRes nav navbar-nav"><li ui-sref-active="active" class=""><a ui-sref="mycourses" class="topBadgesRes" href="#/mycourses">Matières</a></li><li ui-sref-active="active"><a ui-sref="studentevents" ng-class="{'active': currentState == 3}" class="topBadgesRes" href="#/studentevents">Evènements</a></li><li><a href="https://www.youtube.com/watch?v=LU06FaicB4Y&amp;list=PLUDUTmpExkvK1FWf2X4s2P0Z6-UiGb6wv&amp;index=3" target="_blank" class="topBadgesRes">Aide</a></li></ul></div><hr style="margin:0;"><div class="col-sm-12"></div><ul class="makeMargTopBotTwoPxRes nav navbar-nav navbar-nav-bordered navbar-nav-margin-right"><li><a class="topBadgesRes"><!-- ngIf: myOffers --><span ng-if="myOffers" data-toggle="tooltip" data-placement="bottom" data-html="true" data-original-title="<span class='badge silver-badge'>Silver</span>" ng-bind="'Vos Pack'" style="margin-right: 5px;" class="badge packs-badge ng-binding ng-scope">Vos Pack</span><!-- end ngIf: myOffers --><span data-toggle="tooltip" data-placement="bottom" ng-bind="User.Pupils[0].points+' Pts'" data-original-title="0 Points" style="margin-right:5px;" class="badge badge-primary ng-binding">0 Pts</span><span data-toggle="tooltip" data-placement="bottom" data-html="true" ng-bind="TotalTokens+' Jetons'" data-original-title="" class="badge btn-blue-A100 badge ng-binding">0 Jetons</span></a></li></ul><hr style="margin:0;"><div class="col-xs-4 paper-shadow"><ul class="displayFlexRes makeMargTopBotTwoPxRes nav navbar-nav"><li class="fullWidthRes dropdown"><a data-toggle="dropdown" class="topBadgesRes dropdown-toggle">Store<span class="caret"></span></a><ul role="menu" class="dropdown-menu"><li ui-sref-active="active"><a ui-sref="myOrders" href="#/myOrders">Achat Des points</a></li><li ui-sref-active="active"><a href="#/subscriptiontype/14">Achat Des offres</a></li><li ui-sref-active="active"><a ui-sref="PurchasedSubjects" href="#/PurchasedSubjects">Historique Des Achats</a></li></ul></li></ul></div><div class="col-xs-8"><ul class="displayFlexRes makeMargTopBotTwoPxRes nav navbar-nav"><li class="fullWidthRes dropdown user"><a data-toggle="dropdown" class="topBadgesRes dropdown-toggle">F3DI<span class="caret"></span></a><ul role="menu" class="dropdown-menu"><li ui-sref-active="active"><a ui-sref="profile" href="#/profile"><i class="fa fa-user"></i> Profile</a></li><li ui-sref-active="active"><a ui-sref="bookmarks" href="#/bookmarks"><i class="fa fa-calendar"></i>Mes Événements</a></li><!-- ngIf: haveAssignments --><li ui-sref-active="active"><a ui-sref="pupilPointTransfer" href="#/pupilPointTransfer"><i class="fa fa-send"></i>Transfert des points</a></li><li><a ui-sref="dashboard" ng-click="toggleForm('g')" href="#/dashboard"><i class="fa fa-calendar"></i>Calendrier</a></li><li ui-sref-active="active"><a ui-sref="eventsHistory" href="#/eventsHistory"> <i class="fa fa-file-text-o"></i>Historique des Evènements</a></li><li ui-sref-active="active"><a ui-sref="transactionsHistory"> <i class="fa fa-shopping-cart"></i>Historique des Transactions    </a></li><li ui-sref-active="active" ng-show="switching" class="active ng-hide"><a href="" ng-click="switchBack()"><i class="fa fa-mail-forward"></i>Revenez</a></li><li ui-sref-active="active"><a href="/logout"><i class="fa fa-sign-out"></i> Déconnecter</a></li></ul></li></ul></div></div></div></section><!-- uiView:  --><div ui-view="" style="min-height: 690px;" class="ng-scope"><div class="parallax bg-white page-section third ng-scope">
+  <div class="container parallax-layer" data-opacity="true">
+    <div class="media v-middle media-overflow-visible">
+      <div class="media-left">
+        <span class="icon-block s30 bg-lightred">
+          <i ng-class="contentIcon(CurrentContent.type)" class="fa fa-play-circle" style=""></i>
+        </span>
+      </div>
+      <div class="media-body">
+        <div class="text-headline courseTitleRes ng-binding">première partie exercice 1 dérivée d'une fonction</div>
+      </div>
+      <div class="media-right">
+        <button class="btn btn-primary" ng-click="changeLayout()">
+          <!-- ngIf: !bigLayout --><i class="fa fa-expand fa-lg ng-scope" ng-if="!bigLayout"></i><!-- end ngIf: !bigLayout -->
+          <!-- ngIf: bigLayout -->
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container ng-scope">
+  <ol class="breadcrumb margin-v-8 ng-hide" ng-show="FullCourse.path">
+    <li>
+      <a ui-sref="paths" href="#/paths">Chemins</a>
+    </li>
+    <li>
+      <a ui-sref="path({id: FullCourse.path.id})" class="ng-binding" href="#/paths/"></a>
+    </li>
+    <li class="active ng-binding">05_Dérivabilité</li>
+  </ol>
+  <hr class="margin-v-8">
+  <div class="row">
+    <div ng-class="bigLayout ? 'col-md-12' : 'col-md-8'" class="col-md-8">
+      <div ng-show="CurrentContent.type == 1" class="videoWrapper ng-hide">
+        <center>
+          <h3 ng-show="loading" class="ng-hide" style="">
+            <i class="fa fa-spinner fa-spin"></i>
+          </h3>
+          <iframe video-url="CurrentContent.urlData" player-width="'100%'" player-height="'500px'" player-vars="custom.vars" player="custom.player" class="ng-isolate-scope" id="unique-youtube-embed-id-1" frameborder="0" allowfullscreen="1" gesture="media" allow="encrypted-media" title="YouTube video player" width="100%" height="500px" src="https://www.youtube.com/embed/7e1ba906dff77f71556998325a9b10db?rel=0&amp;enablejsapi=1&amp;start=0&amp;origin=https%3A%2F%2Fwww.takiacademy.com&amp;widgetid=1"></iframe>
+        </center>
+      </div>
+      <div class="embedVideo" ng-show="isAmazonVideo(CurrentContent.type)" style="">
+        <h3 ng-show="loading" class="ng-hide" style="">
+          <i class="fa fa-spinner fa-spin"></i>
+        </h3>
+        <div id="embedBox" ng-hide="loading" class="" style=""><div style="width: 100%; height: 100%; border: none; max-width: 100%; z-index: 0; position: relative;" class="container-second"><style id="resetStyle">.vc-container * {
+	color: unset;
+	opacity: unset;
+	
+	background: unset;
+	border: unset;
+	box-shadow: unset;
+	
+	bottom: unset;
+	clear: unset;
+	clip: unset;
+	display: unset;
+	float: unset;
+	height: unset;
+	left: unset;
+	margin: unset;
+	max-height: unset;
+	max-width: unset;
+	min-height: unset;
+	min-width: unset;
+	overflow: unset;
+	padding: unset;
+	position: unset;
+	right: unset;
+	top: unset;
+	visibility: unset;
+	width: unset;
+	vertical-align: unset;
+	z-index: unset;
+	
+	align-content: unset;
+	align-items: unset;
+	align-self: unset;
+	flex: unset;
+	justify-content: unset;
+	order: unset;
+	
+	hyphens: unset;
+	letter-spacing: unset;
+	line-break: unset;
+	line-height: unset;
+	overflow-wrap: unset;
+	tab-size: unset;
+	text-align: unset;
+	text-align-last: unset;
+	text-combine-upright: unset;
+	text-indent: unset;
+	text-transform: unset;
+	white-space: unset;
+	word-break: unset;
+	word-spacing: unset;
+	word-wrap: unset;
+	
+	text-decoration: unset;
+	text-shadow: unset;
+	text-underline-position: unset;
+	
+	font: unset;
+	font-weight: unset;
+	
+	direction: unset;
+	text-orientation: unset;
+	unicode-bidi: unset;
+	user-select: unset;
+	writing-mode: unset;
+	
+	border-collapse: unset;
+	border-spacing: unset;
+	caption-side: unset;
+	empty-cells: unset;
+	table-layout: unset;
+	
+	counter-increment: unset;
+	counter-reset: unset;
+	list-style: unset;
+	
+	animation: unset;
+	
+	backface-visibility: unset;
+	perspective: unset;
+	transform: unset;
+	
+	transition: unset;
+	
+	box-sizing: unset;
+	content: unset;
+	cursor: unset;
+	outline: unset;
+	resize: unset;
+	text-overflow: unset;
+	
+	column-rule: unset;
+	column-count: unset;
+	column-fill: unset;
+	column-gap: unset;
+	column-span: unset;
+	column-width: unset;
+	columns: unset;
+	widows: unset;
+	
+	orphans: unset;
+	
+	quotes: unset;
+	
+	filter: unset;
+	
+	image-rendering: unset;
+	object-fit: unset;
+	object-position: unset;
+}
+
+.vc-container address, .vc-container article, .vc-container aside,
+.vc-container blockquote, .vc-container canvas, .vc-container dd,
+.vc-container div, .vc-container dl, .vc-container dt,
+.vc-container fieldset, .vc-container figcaption, .vc-container figure,
+.vc-container figcaption, .vc-container footer, .vc-container form,
+.vc-container h1, .vc-container h2, .vc-container h3,
+.vc-container h4, .vc-container h5, .vc-container h6,
+.vc-container header, .vc-container hgroup, .vc-container hr,
+.vc-container li, .vc-container main, .vc-container nav,
+.vc-container noscript, .vc-container ol, .vc-container output,
+.vc-container p, .vc-container pre, .vc-container section,
+.vc-container table, .vc-container tfoot, .vc-container ul,
+.vc-container video {
+	display: block;
+}</style><style id="previewStyle">.vc-container .html5-video-player {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  overflow: hidden;
+  outline: 0;
+  font-family: "YouTube Noto", Roboto, Arial, Helvetica, sans-serif;
+  color: #eee;
+  text-align: left;
+  direction: ltr;
+  font-size: 11px;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  contain: strict; }
+  .vc-container .html5-video-player a {
+    color: inherit;
+    text-decoration: none;
+    -moz-transition: color 0.1s cubic-bezier(0, 0, 0.2, 1);
+    -webkit-transition: color 0.1s cubic-bezier(0, 0, 0.2, 1);
+    transition: color 0.1s cubic-bezier(0, 0, 0.2, 1);
+    outline: 0; }
+    .vc-container .html5-video-player a:hover {
+      color: #fff;
+      -moz-transition: color 0.1s cubic-bezier(0.4, 0, 1, 1);
+      -webkit-transition: color 0.1s cubic-bezier(0.4, 0, 1, 1);
+      transition: color 0.1s cubic-bezier(0.4, 0, 1, 1); }
+  .vc-container .html5-video-player svg {
+    pointer-events: none;
+    height: 100%; }
+  .vc-container .html5-video-player:not(.ytp-touch-mode) ::-webkit-scrollbar {
+    width: 10px;
+    background-color: #424242; }
+  .vc-container .html5-video-player:not(.ytp-touch-mode) ::-webkit-scrollbar-track {
+    background-color: #424242; }
+  .vc-container .html5-video-player:not(.ytp-touch-mode) ::-webkit-scrollbar-thumb {
+    background-color: #8e8e8e;
+    border: 1px solid #424242;
+    border-radius: 5px; }
+
+.vc-container .html5-video-container {
+  z-index: 10;
+  position: relative; }
+
+.vc-container .html5-main-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  outline: 0; }
+  .vc-container .html5-main-video:not([controls])::-webkit-media-controls, .vc-container .html5-main-video:not([controls])::-webkit-media-controls-start-playback-button {
+    display: none; }
+  .vc-container .html5-main-video::-webkit-media-controls-timeline {
+    display: inline; }
+  .vc-container .html5-main-video::-webkit-media-controls-current-time-display, .vc-container .html5-main-video::-webkit-media-controls-time-remaining-display {
+    display: -webkit-flex; }
+
+@media screen and (max-width: 325px) {
+  .vc-container .html5-main-video::-webkit-media-controls-wireless-playback-picker-button {
+    display: none; } }
+
+.vc-container .ytp-player-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 48px;
+  bottom: 49px;
+  -moz-transition: bottom 0.25s cubic-bezier(0, 0, 0.2, 1), top 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: bottom 0.25s cubic-bezier(0, 0, 0.2, 1), top 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: bottom 0.25s cubic-bezier(0, 0, 0.2, 1), top 0.25s cubic-bezier(0, 0, 0.2, 1); }
+  .vc-container .ytp-player-content.ytp-iv-player-content {
+    left: 12px;
+    right: 12px; }
+
+.vc-container .ytp-hide-info-bar .ytp-player-content {
+  top: 0;
+  -moz-transition: bottom 0.1s cubic-bezier(0.4, 0, 1, 1), top 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: bottom 0.1s cubic-bezier(0.4, 0, 1, 1), top 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transition: bottom 0.1s cubic-bezier(0.4, 0, 1, 1), top 0.1s cubic-bezier(0.4, 0, 1, 1); }
+
+.vc-container .ytp-button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+  text-align: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  cursor: default;
+  line-height: inherit;
+  outline: 0; }
+  .vc-container .ytp-button:focus {
+    outline: 0; }
+  .vc-container .ytp-button::-moz-focus-inner {
+    padding: 0;
+    border: 0; }
+
+.vc-container .html5-video-player .ytp-button[aria-disabled=true], .vc-container .html5-video-player .ytp-button[disabled] {
+  opacity: 0.5; }
+
+.vc-container .ytp-button:not([aria-disabled=true]):not([disabled]):not([aria-hidden=true]) {
+  cursor: pointer; }
+
+.vc-container .ytp-chrome-top, .vc-container .ytp-chrome-bottom {
+  position: absolute;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+
+.vc-container .ytp-chrome-top {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  left: 12px;
+  right: 12px;
+  top: 0;
+  z-index: 60; }
+
+.vc-container .ytp-chrome-bottom {
+  bottom: 0;
+  height: 36px;
+  width: 100%;
+  z-index: 61;
+  text-align: left;
+  direction: ltr; }
+
+.vc-container .ytp-chrome-top .ytp-button, .vc-container .ytp-chrome-controls .ytp-button {
+  opacity: .9;
+  display: inline-block;
+  width: 36px;
+  -moz-transition: opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transition: opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  overflow: hidden; }
+
+.vc-container .ytp-chrome-top .ytp-button {
+  padding-top: 6px;
+  height: 42px;
+  vertical-align: top; }
+
+.vc-container .ytp-chrome-controls .ytp-button {
+  height: 100%; }
+
+.vc-container .ytp-prev-button::before, .vc-container .ytp-play-button:not(.ytp-play-button-playlist)::before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 12px;
+  position: absolute;
+  top: 0;
+  left: -12px; }
+
+.vc-container .ytp-chrome-top .ytp-button:hover, .vc-container .ytp-chrome-controls .ytp-button:not([aria-disabled=true]):not([disabled]):hover {
+  opacity: 1;
+  -moz-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1); }
+
+.vc-container .ytp-svg-fill {
+  fill: #fff; }
+
+.vc-container .ytp-svg-shadow {
+  stroke: #000;
+  stroke-opacity: .15;
+  stroke-width: 2px;
+  fill: none; }
+
+.vc-container .ytp-svg-shadow-fill {
+  fill: #000;
+  fill-opacity: .15;
+  stroke: none; }
+
+.vc-container .ytp-chrome-controls .ytp-button[aria-pressed] {
+  position: relative; }
+  .vc-container .ytp-chrome-controls .ytp-button[aria-pressed]:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 2px;
+    border-radius: 2px;
+    width: 0;
+    left: 18px;
+    bottom: 6px;
+    background-color: #0294f9;
+    -moz-transition: left 0.1s cubic-bezier(0.4, 0, 1, 1), width 0.1s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transition: left 0.1s cubic-bezier(0.4, 0, 1, 1), width 0.1s cubic-bezier(0.4, 0, 1, 1);
+    transition: left 0.1s cubic-bezier(0.4, 0, 1, 1), width 0.1s cubic-bezier(0.4, 0, 1, 1); }
+
+.vc-container .ytp-chrome-controls .ytp-button[aria-pressed=true]:after {
+  width: 18px;
+  left: 9px;
+  -moz-transition: left 0.25s cubic-bezier(0, 0, 0.2, 1), width 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: left 0.25s cubic-bezier(0, 0, 0.2, 1), width 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: left 0.25s cubic-bezier(0, 0, 0.2, 1), width 0.25s cubic-bezier(0, 0, 0.2, 1); }
+
+.vc-container .ytp-chrome-top-buttons {
+  white-space: nowrap; }
+
+.vc-container .ytp-chrome-controls {
+  height: 36px;
+  line-height: 36px;
+  font-size: 109%;
+  text-align: left;
+  direction: ltr; }
+
+.vc-container .ytp-left-controls {
+  float: left;
+  height: 100%; }
+
+.vc-container .ytp-right-controls {
+  float: right;
+  height: 100%; }
+
+.vc-container .ytp-chrome-top, .vc-container .ytp-chrome-bottom {
+  -moz-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1); }
+
+.vc-container .ytp-gradient-top, .vc-container .ytp-gradient-bottom {
+  height: 98px;
+  width: 100%;
+  position: absolute;
+  background-repeat: repeat-x;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAADGCAYAAAAT+OqFAAAAdklEQVQoz42QQQ7AIAgEF/T/D+kbq/RWAlnQyyazA4aoAB4FsBSA/bFjuF1EOL7VbrIrBuusmrt4ZZORfb6ehbWdnRHEIiITaEUKa5EJqUakRSaEYBJSCY2dEstQY7AuxahwXFrvZmWl2rh4JZ07z9dLtesfNj5q0FU3A5ObbwAAAABJRU5ErkJggg==);
+  -moz-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  pointer-events: none; }
+
+.vc-container .ytp-gradient-top {
+  top: 0;
+  z-index: 23;
+  background-position: top; }
+
+.vc-container .ytp-gradient-bottom {
+  bottom: 0;
+  z-index: 22;
+  background-position: bottom; }
+
+.vc-container .ytp-hide-info-bar .ytp-gradient-top {
+  display: none; }
+
+.vc-container .ytp-hide-info-bar .ytp-chrome-top .ytp-title, .vc-container .ytp-hide-info-bar .ytp-chrome-top .ytp-playlist-menu-button, .vc-container .ytp-hide-info-bar .ytp-chrome-top .ytp-chrome-top-buttons:not(.ytp-chrome-top-show-buttons) {
+  display: none; }
+
+.vc-container .ytp-swatch-background-color {
+  background-color: #0294f9; }
+
+@media screen and (-ms-high-contrast: black-on-white) {
+  .vc-container .ytp-swatch-background-color {
+    background-color: #000 !important; } }
+
+@media screen and (-ms-high-contrast: white-on-black) {
+  .vc-container .ytp-swatch-background-color {
+    background-color: #fff !important; } }
+
+@media print {
+  .vc-container .html5-video-player {
+    border: 1px #000 solid;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .vc-container .html5-video-player * {
+      visibility: hidden; }
+  .vc-container .ytp-chrome-top, .vc-container .ytp-thumbnail-overlay, .vc-container .ytp-large-play-button {
+    opacity: 1 !important;
+    display: block !important;
+    visibility: visible !important; }
+  .vc-container .ytp-title {
+    color: #000 !important;
+    visibility: visible !important; }
+    .vc-container .ytp-title * {
+      color: #000 !important;
+      visibility: visible !important; }
+  .vc-container .ytp-large-play-button * {
+    color: #000 !important;
+    visibility: visible !important; } }
+
+.vc-container .html5-video-player .video-stream {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.vc-container .ytp-ad-persistent-progress-bar-container {
+  position: absolute;
+  bottom: -3px;
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  -moz-transition: bottom 0.1s cubic-bezier(0.4, 0, 1, 1), opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: bottom 0.1s cubic-bezier(0.4, 0, 1, 1), opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transition: bottom 0.1s cubic-bezier(0.4, 0, 1, 1), opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  z-index: 34; }
+
+.vc-container .ytp-ad-persistent-progress-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #fc0; }
+
+.vc-container .ytp-iv-video-content {
+  position: absolute; }
+  .vc-container .ytp-iv-video-content .video-annotations {
+    display: block;
+    position: absolute;
+    z-index: 20;
+    width: 100%; }
+
+.vc-container .ytp-bezel {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 52px;
+  height: 52px;
+  z-index: 19;
+  margin-left: -26px;
+  margin-top: -26px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 26px;
+  -moz-animation: ytp-bezel-fadeout .5s linear 1 normal forwards;
+  -webkit-animation: ytp-bezel-fadeout .5s linear 1 normal forwards;
+  animation: ytp-bezel-fadeout .5s linear 1 normal forwards;
+  pointer-events: none; }
+
+.vc-container .ytp-bezel-icon {
+  width: 36px;
+  height: 36px;
+  margin: 8px; }
+
+@keyframes ytp-bezel-fadeout {
+  0% {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: scale(2); } }
+
+.vc-container .ytp-cards-button {
+  opacity: .9;
+  display: inline-block;
+  width: 36px;
+  height: 42px;
+  position: absolute;
+  padding-top: 6px;
+  right: 12px;
+  -moz-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  overflow: hidden;
+  pointer-events: all;
+  z-index: 63; }
+  .vc-container .ytp-cards-button:hover {
+    opacity: 1;
+    -moz-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+    -webkit-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+    transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1); }
+  .vc-container .ytp-cards-button .ytp-svg-shadow {
+    -moz-transition: stroke-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transition: stroke-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+    transition: stroke-opacity 0.1s cubic-bezier(0.4, 0, 1, 1); }
+  .vc-container .ytp-cards-button .ytp-svg-shadow-fill {
+    -moz-transition: fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transition: fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+    transition: fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1); }
+
+.vc-container .ytp-cards-button-icon-shopping {
+  display: none; }
+
+.vc-container .ytp-cards-teaser {
+  position: absolute;
+  top: 8.5px;
+  right: 0;
+  border-right: 12px solid transparent;
+  max-width: 90%;
+  opacity: .75;
+  cursor: pointer;
+  z-index: 62;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1); }
+  .vc-container .ytp-cards-teaser .ytp-cards-teaser-box, .vc-container .ytp-cards-teaser .ytp-cards-teaser-text {
+    height: 31px; }
+  .vc-container .ytp-cards-teaser .ytp-cards-teaser-box {
+    position: absolute;
+    top: 0;
+    right: 18px;
+    border-radius: 2px;
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #f1f1f1;
+    -moz-transition: -moz-transform 0.33s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transition: -webkit-transform 0.33s cubic-bezier(0.4, 0, 1, 1);
+    -ms-transition: -ms-transform 0.33s cubic-bezier(0.4, 0, 1, 1);
+    transition: transform 0.33s cubic-bezier(0.4, 0, 1, 1);
+    -moz-transform: scaleX(0) translateX(0);
+    -ms-transform: scaleX(0) translateX(0);
+    -webkit-transform: scaleX(0) translateX(0);
+    transform: scaleX(0) translateX(0);
+    -moz-transform-origin: right 0;
+    -ms-transform-origin: right 0;
+    -webkit-transform-origin: right 0;
+    transform-origin: right 0; }
+  .vc-container .ytp-cards-teaser .ytp-cards-teaser-text {
+    position: relative;
+    padding: 0 36px 0 10px;
+    max-width: 0;
+    opacity: 0;
+    color: #000;
+    font-weight: 500;
+    font-size: 109.090909%;
+    line-height: 31px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: normal;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -moz-transition: opacity 0.165s cubic-bezier(0.4, 0, 1, 1), max-width 0s ease 0.165s;
+    -webkit-transition: opacity 0.165s cubic-bezier(0.4, 0, 1, 1), max-width 0s ease 0.165s;
+    transition: opacity 0.165s cubic-bezier(0.4, 0, 1, 1), max-width 0s ease 0.165s; }
+
+.vc-container .ytp-thumbnail-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 14;
+  background-position: center;
+  background-repeat: no-repeat;
+  -moz-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover; }
+
+.vc-container .ytp-thumbnail-overlay-image {
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute; }
+
+.vc-container .ytp-thumbnail-overlay-curtain {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.vc-container .ytp-upnext {
+  position: absolute;
+  display: block;
+  vertical-align: top;
+  opacity: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -moz-transition: all 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: all 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transition: all 0.1s cubic-bezier(0.4, 0, 1, 1);
+  z-index: 35; }
+
+.vc-container .ytp-upnext-top {
+  width: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 50%;
+  margin-bottom: 52px; }
+
+.vc-container .ytp-upnext-bottom {
+  width: 100%;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  margin-top: 52px; }
+
+.vc-container .ytp-upnext-title {
+  display: block;
+  padding: 10px 10px 2px;
+  text-align: center;
+  font-size: 200%;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.vc-container .ytp-upnext-author {
+  display: block;
+  line-height: 1.3em;
+  overflow: hidden;
+  padding: 0 10px 10px;
+  text-align: center;
+  color: #fff;
+  font-size: 130%; }
+
+.vc-container .ytp-upnext-header {
+  display: block;
+  font-size: 140%;
+  text-align: center;
+  padding-bottom: 7px; }
+
+.vc-container .ytp-upnext-cancel {
+  display: block;
+  float: none;
+  text-align: center; }
+
+.vc-container .ytp-upnext-cancel-button {
+  display: inline-block;
+  float: none;
+  padding: 10px;
+  font-size: 140%; }
+  .vc-container .ytp-upnext-cancel-button:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+    border-radius: 2px; }
+
+.vc-container .ytp-upnext-close {
+  position: absolute;
+  right: 7px;
+  top: 7px; }
+
+.vc-container .ytp-upnext-close-button {
+  width: 24px;
+  height: 24px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDI0IDI0IiB3aWR0aD0iMTAwJSI+PHBhdGggZD0iTTE5IDYuNDFMMTcuNTkgNSAxMiAxMC41OSA2LjQxIDUgNSA2LjQxIDEwLjU5IDEyIDUgMTcuNTkgNi40MSAxOSAxMiAxMy40MSAxNy41OSAxOSAxOSAxNy41OSAxMy40MSAxMnoiIGZpbGw9IiNmZmYiIC8+PC9zdmc+); }
+
+.vc-container .ytp-upnext-autoplay-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 98px;
+  height: 98px;
+  margin: -49px 0 0 -49px;
+  -moz-transition: all 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: all 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transition: all 0.1s cubic-bezier(0.4, 0, 1, 1); }
+
+.vc-container .ytp-upnext-paused {
+  display: block;
+  text-align: center;
+  font-size: 120%;
+  font-style: italic;
+  opacity: 0; }
+
+.vc-container .ytp-upnext-autoplay-paused .ytp-upnext-paused {
+  opacity: 1;
+  -moz-transition: all 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: all 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transition: all 0.1s cubic-bezier(0.4, 0, 1, 1); }
+
+.vc-container .html5-endscreen {
+  cursor: default;
+  overflow: hidden;
+  z-index: 32; }
+
+.vc-container .ytp-endscreen-content {
+  position: absolute;
+  left: 50%;
+  top: 50%; }
+
+.vc-container .ytp-endscreen-next {
+  display: none;
+  height: 100%;
+  opacity: .9;
+  position: absolute;
+  right: -32px;
+  width: 32px;
+  -moz-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1); }
+  .vc-container .ytp-endscreen-next:hover {
+    opacity: 1;
+    -moz-transition: opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transition: opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+    transition: opacity 0.1s cubic-bezier(0.4, 0, 1, 1); }
+
+.vc-container .ytp-endscreen-previous {
+  display: none;
+  height: 100%;
+  left: -32px;
+  opacity: .9;
+  position: absolute;
+  width: 32px;
+  -moz-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1); }
+  .vc-container .ytp-endscreen-previous:hover {
+    opacity: 1;
+    -moz-transition: opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transition: opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+    transition: opacity 0.1s cubic-bezier(0.4, 0, 1, 1); }
+
+.vc-container .ytp-fullscreen-button::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 12px;
+  position: absolute;
+  top: 0;
+  left: 100%; }
+
+.vc-container .ytp-fullscreen-button-corner-0, .vc-container .ytp-fullscreen-button-corner-1, .vc-container .ytp-fullscreen-button-corner-2, .vc-container .ytp-fullscreen-button-corner-3 {
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none; }
+
+@keyframes ytp-fullscreen-button-corner-0-animation {
+  50% {
+    -moz-transform: translate(-1px, -1px);
+    -ms-transform: translate(-1px, -1px);
+    -webkit-transform: translate(-1px, -1px);
+    transform: translate(-1px, -1px); } }
+
+@keyframes ytp-fullscreen-button-corner-1-animation {
+  50% {
+    -moz-transform: translate(1px, -1px);
+    -ms-transform: translate(1px, -1px);
+    -webkit-transform: translate(1px, -1px);
+    transform: translate(1px, -1px); } }
+
+@keyframes ytp-fullscreen-button-corner-2-animation {
+  50% {
+    -moz-transform: translate(1px, 1px);
+    -ms-transform: translate(1px, 1px);
+    -webkit-transform: translate(1px, 1px);
+    transform: translate(1px, 1px); } }
+
+@keyframes ytp-fullscreen-button-corner-3-animation {
+  50% {
+    -moz-transform: translate(-1px, 1px);
+    -ms-transform: translate(-1px, 1px);
+    -webkit-transform: translate(-1px, 1px);
+    transform: translate(-1px, 1px); } }
+
+.vc-container .ytp-fullscreen-button:not([aria-disabled=true]):hover .ytp-fullscreen-button-corner-0 {
+  -moz-animation: ytp-fullscreen-button-corner-0-animation 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation: ytp-fullscreen-button-corner-0-animation 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: ytp-fullscreen-button-corner-0-animation 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.vc-container .ytp-fullscreen-button:not([aria-disabled=true]):hover .ytp-fullscreen-button-corner-1 {
+  -moz-animation: ytp-fullscreen-button-corner-1-animation 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation: ytp-fullscreen-button-corner-1-animation 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: ytp-fullscreen-button-corner-1-animation 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.vc-container .ytp-fullscreen-button:not([aria-disabled=true]):hover .ytp-fullscreen-button-corner-2 {
+  -moz-animation: ytp-fullscreen-button-corner-2-animation 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation: ytp-fullscreen-button-corner-2-animation 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: ytp-fullscreen-button-corner-2-animation 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.vc-container .ytp-fullscreen-button:not([aria-disabled=true]):hover .ytp-fullscreen-button-corner-3 {
+  -moz-animation: ytp-fullscreen-button-corner-3-animation 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-animation: ytp-fullscreen-button-corner-3-animation 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: ytp-fullscreen-button-corner-3-animation 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+
+.vc-container .ytp-large-play-button {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 68px;
+  height: 48px;
+  margin-left: -34px;
+  margin-top: -24px;
+  -moz-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1); }
+  .vc-container .ytp-large-play-button svg {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; }
+
+.vc-container .ytp-large-play-button-bg {
+  -moz-transition: fill 0.1s cubic-bezier(0.4, 0, 1, 1), fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: fill 0.1s cubic-bezier(0.4, 0, 1, 1), fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transition: fill 0.1s cubic-bezier(0.4, 0, 1, 1), fill-opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+  fill: #1f1f1f;
+  fill-opacity: 0.81; }
+
+.vc-container .ytp-cued-thumbnail-overlay:hover .ytp-large-play-button-bg {
+  -moz-transition: fill 0.1s cubic-bezier(0, 0, 0.2, 1), fill-opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: fill 0.1s cubic-bezier(0, 0, 0.2, 1), fill-opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  transition: fill 0.1s cubic-bezier(0, 0, 0.2, 1), fill-opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  fill: #0294f9;
+  fill-opacity: 1; }
+
+.vc-container .ytp-multicam-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  max-width: 100%;
+  z-index: 71;
+  background: rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  -moz-transition: width 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: width 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: width 0.25s cubic-bezier(0, 0, 0.2, 1);
+  width: 175px; }
+
+.vc-container .ytp-multicam-menu-items {
+  width: 175px; }
+
+.vc-container .ytp-multicam-menu-header {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 143px;
+  height: 22px;
+  font-size: 105%;
+  line-height: 22px;
+  font-weight: 500; }
+
+.vc-container .ytp-multicam-menu-close {
+  float: right;
+  width: 22px;
+  height: 100%; }
+
+.vc-container .ytp-multicam-menu-items {
+  position: absolute;
+  top: 54px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+.vc-container .ytp-paid-content-overlay {
+  bottom: 41px;
+  display: inline-block;
+  font-size: 109.090909%;
+  height: 30px;
+  left: 25px;
+  line-height: 30px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  z-index: 24; }
+
+.vc-container .ytp-paid-content-overlay-text {
+  opacity: 1;
+  -moz-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1); }
+
+.vc-container .ytp-panel {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+
+.vc-container .ytp-popup {
+  position: absolute;
+  border-radius: 2px;
+  background: rgba(28, 28, 28, 0.9);
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  -moz-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none; }
+
+.vc-container .ytp-chrome-controls .ytp-play-button {
+  width: 46px; }
+
+.vc-container .ytp-playlist-menu {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 400px;
+  max-width: 100%;
+  z-index: 71;
+  background: rgba(0, 0, 0, 0.8);
+  -moz-transition: -moz-transform 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -ms-transition: -ms-transform 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: transform 0.25s cubic-bezier(0, 0, 0.2, 1); }
+
+.vc-container .ytp-playlist-menu-header {
+  padding: 15px;
+  border-bottom: 1px solid #444; }
+
+.vc-container .ytp-playlist-menu-title {
+  height: 20px;
+  line-height: 20px;
+  padding-right: 15px;
+  font-size: 136%;
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.vc-container .ytp-playlist-menu-subtitle {
+  color: #b8b8b8;
+  line-height: 17px;
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.vc-container .ytp-playlist-menu-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 24px;
+  height: 24px; }
+  .vc-container .ytp-playlist-menu-close path {
+    fill: #aaa; }
+  .vc-container .ytp-playlist-menu-close:hover path {
+    fill: #fff; }
+
+.vc-container .ytp-playlist-menu-items {
+  position: absolute;
+  top: 68px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto; }
+
+.vc-container .ytp-chrome-top .ytp-playlist-menu-button {
+  width: auto;
+  height: auto; }
+
+.vc-container .ytp-playlist-menu-button-icon {
+  width: 36px;
+  height: 36px; }
+
+.vc-container .ytp-playlist-menu-button-text {
+  padding-right: 6px;
+  line-height: 36px;
+  opacity: 1; }
+
+.vc-container .ytp-playlist-menu-button-icon, .vc-container .ytp-playlist-menu-button-text {
+  vertical-align: middle;
+  display: inline-block; }
+
+.vc-container .ytp-scrubber-container {
+  position: absolute;
+  top: -4px;
+  left: -6.5px;
+  z-index: 43; }
+
+.vc-container .ytp-scrubber-button {
+  height: 13px;
+  width: 13px;
+  border-radius: 6.5px;
+  -moz-transition: -moz-transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -ms-transition: -ms-transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transition: transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0); }
+
+.vc-container .ytp-progress-bar-container:hover:not([aria-disabled=true]) .ytp-scrubber-button {
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+  -moz-transition: -moz-transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -ms-transition: -ms-transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1); }
+
+.vc-container .ytp-scrubber-pull-indicator {
+  position: absolute;
+  z-index: 42;
+  bottom: 16.9px;
+  left: 6.5px;
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+  .vc-container .ytp-scrubber-pull-indicator::before {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 6.5px;
+    height: 6.5px;
+    border-style: solid;
+    border-width: 2px 0 0 2px;
+    border-color: #eaeaea; }
+  .vc-container .ytp-scrubber-pull-indicator::after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 6.5px;
+    height: 6.5px;
+    border-style: solid;
+    border-width: 2px 0 0 2px;
+    border-color: #eaeaea;
+    -moz-transition: all .1s;
+    -webkit-transition: all .1s;
+    transition: all 0.1s; }
+  .vc-container .ytp-scrubber-pull-indicator::before {
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    transition: all 0.2s; }
+
+.vc-container .ytp-progress-list {
+  z-index: 39;
+  background: rgba(255, 255, 255, 0.2);
+  height: 100%;
+  -moz-transform: scaleY(0.6);
+  -ms-transform: scaleY(0.6);
+  -webkit-transform: scaleY(0.6);
+  transform: scaleY(0.6);
+  -moz-transition: -moz-transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -ms-transition: -ms-transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transition: transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+  position: relative; }
+
+.vc-container .ytp-progress-bar-container:hover:not([aria-disabled=true]) .ytp-progress-list {
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+  -moz-transition: -moz-transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -ms-transition: -ms-transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1); }
+
+.vc-container .ytp-bound-time-left, .vc-container .ytp-bound-time-right {
+  position: absolute;
+  display: none;
+  top: -29px;
+  z-index: 29;
+  background-color: rgba(28, 28, 28, 0.9);
+  text-align: center;
+  color: #e3e3e3;
+  padding: 5px 9px;
+  opacity: 0;
+  -moz-transition: opacity .1s ease-in;
+  -webkit-transition: opacity .1s ease-in;
+  transition: opacity 0.1s ease-in; }
+
+.vc-container .ytp-bound-time-left {
+  left: 0; }
+
+.vc-container .ytp-bound-time-right {
+  right: 0; }
+
+.vc-container .ytp-bound-time-left::after, .vc-container .ytp-bound-time-right::after {
+  position: absolute;
+  content: '';
+  bottom: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid; }
+
+.vc-container .ytp-bound-time-left::after {
+  left: 0;
+  border-width: 5px 5px 0 0;
+  border-color: rgba(28, 28, 28, 0.9) transparent transparent; }
+
+.vc-container .ytp-bound-time-right::after {
+  right: 0;
+  border-width: 0 5px 5px 0;
+  border-color: transparent rgba(28, 28, 28, 0.9) transparent transparent; }
+
+.vc-container .ytp-load-progress, .vc-container .ytp-play-progress, .vc-container .ytp-hover-progress, .vc-container .ytp-clip-start-exclude, .vc-container .ytp-clip-end-exclude {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0; }
+
+.vc-container .ytp-clip-start-exclude, .vc-container .ytp-clip-end-exclude {
+  display: none;
+  z-index: 37;
+  background-color: rgba(255, 255, 255, 0);
+  -moz-transition: background-color 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: background-color 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transition: background-color 0.1s cubic-bezier(0.4, 0, 1, 1); }
+
+.vc-container .ytp-load-progress {
+  z-index: 33;
+  background: rgba(255, 255, 255, 0.4); }
+
+.vc-container .ytp-play-progress {
+  z-index: 34; }
+
+.vc-container .ytp-hover-progress {
+  z-index: 35;
+  background: rgba(0, 0, 0, 0.125);
+  opacity: 0;
+  -moz-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1); }
+
+.vc-container .ytp-clip-start, .vc-container .ytp-clip-end {
+  display: none;
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  bottom: -4.5px;
+  margin-left: -7px;
+  z-index: 44;
+  -moz-transform: scaleY(0.21429);
+  -ms-transform: scaleY(0.21429);
+  -webkit-transform: scaleY(0.21429);
+  transform: scaleY(0.21429);
+  -moz-transition: -moz-transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+  -ms-transition: -ms-transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+  transition: transform 0.1s cubic-bezier(0.4, 0, 1, 1); }
+
+.vc-container .ytp-progress-bar-container:hover:not([aria-disabled=true]) .ytp-clip-start, .vc-container .ytp-progress-bar-container:hover:not([aria-disabled=true]) .ytp-clip-end {
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+  -moz-transition: -moz-transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -ms-transition: -ms-transform 0.1s cubic-bezier(0, 0, 0.2, 1);
+  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1); }
+
+.vc-container .ytp-clip-start svg, .vc-container .ytp-clip-end svg {
+  display: block; }
+
+.vc-container .ytp-progress-bar-container {
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 35px;
+  height: 5px; }
+  .vc-container .ytp-progress-bar-container:not([aria-disabled=true]) {
+    cursor: pointer; }
+
+.vc-container .ytp-progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 31;
+  outline: none; }
+
+.vc-container .ytp-progress-bar-padding {
+  position: absolute;
+  width: 100%;
+  height: 16px;
+  bottom: 0;
+  z-index: 28; }
+
+.vc-container .ytp-progress-bar-container:hover:not([aria-disabled=true]) .ytp-progress-bar-padding {
+  height: 22px;
+  bottom: -6px; }
+
+.vc-container .ytp-remote {
+  left: 0;
+  bottom: 49px;
+  -moz-transition: bottom 0.25s cubic-bezier(0, 0, 0.2, 1), opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: bottom 0.25s cubic-bezier(0, 0, 0.2, 1), opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: bottom 0.25s cubic-bezier(0, 0, 0.2, 1), opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  pointer-events: none; }
+
+.vc-container .ytp-remote-display-status {
+  z-index: 15;
+  position: absolute;
+  left: 12px;
+  bottom: 49px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-right: 5px;
+  border-radius: 5px;
+  opacity: 0.85; }
+
+.vc-container .ytp-remote-display-status-icon {
+  float: left;
+  width: 40px;
+  height: 40px; }
+
+.vc-container .ytp-remote-display-status-text {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+  padding-left: 5px;
+  font-size: 130%;
+  font-weight: 500;
+  display: inline-block; }
+
+.vc-container .ytp-settings-button {
+  position: relative; }
+  .vc-container .ytp-settings-button svg {
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+    -ms-transition: -ms-transform 0.1s cubic-bezier(0.4, 0, 1, 1);
+    transition: transform 0.1s cubic-bezier(0.4, 0, 1, 1); }
+  .vc-container .ytp-settings-button.ytp-settings-close svg {
+    -ms-transform: rotate(15deg);
+    -moz-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg); }
+
+.vc-container .ytp-settings-menu, .vc-container .ytp-speed-menu {
+  width: 208px;
+  height: 130px;
+  right: 12px;
+  bottom: 49px;
+  z-index: 69;
+  will-change: width, height; }
+  .vc-container .ytp-settings-menu .ytp-panel, .vc-container .ytp-speed-menu .ytp-panel {
+    width: 208px;
+    height: 130px;
+    position: absolute;
+    bottom: 0;
+    right: 0; }
+    .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-menu, .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-header, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-menu, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-header {
+      height: 33px;
+      padding: 6px 0;
+      display: table;
+      width: 100%;
+      color: #eee;
+      box-sizing: border-box; }
+      .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem, .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-header .ytp-menuitem, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-menu .ytp-menuitem, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-header .ytp-menuitem {
+        display: table-row;
+        cursor: default;
+        outline: none;
+        height: 33px; }
+        .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem:not([aria-disabled=true]), .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-header .ytp-menuitem:not([aria-disabled=true]), .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-menu .ytp-menuitem:not([aria-disabled=true]), .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-header .ytp-menuitem:not([aria-disabled=true]) {
+          cursor: pointer; }
+        .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem:not([aria-disabled=true]):hover, .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-header .ytp-menuitem:not([aria-disabled=true]):hover, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-menu .ytp-menuitem:not([aria-disabled=true]):hover, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-header .ytp-menuitem:not([aria-disabled=true]):hover {
+          background-color: rgba(255, 255, 255, 0.1); }
+        .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-label, .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-content, .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-header .ytp-menuitem .ytp-menuitem-label, .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-header .ytp-menuitem .ytp-menuitem-content, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-label, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-content, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-header .ytp-menuitem .ytp-menuitem-label, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-header .ytp-menuitem .ytp-menuitem-content {
+          display: table-cell;
+          vertical-align: middle;
+          padding: 0 15px; }
+        .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-label, .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-header .ytp-menuitem .ytp-menuitem-label, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-label, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-header .ytp-menuitem .ytp-menuitem-label {
+          font-size: 118%;
+          font-weight: 500; }
+        .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-content, .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-header .ytp-menuitem .ytp-menuitem-content, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-menu .ytp-menuitem .ytp-menuitem-content, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-header .ytp-menuitem .ytp-menuitem-content {
+          font-size: 109%;
+          text-align: right; }
+        .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-menu .ytp-menuitem[aria-haspopup=true] .ytp-menuitem-content, .vc-container .ytp-settings-menu .ytp-panel .ytp-panel-header .ytp-menuitem[aria-haspopup=true] .ytp-menuitem-content, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-menu .ytp-menuitem[aria-haspopup=true] .ytp-menuitem-content, .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-header .ytp-menuitem[aria-haspopup=true] .ytp-menuitem-content {
+          background-repeat: no-repeat;
+          background-position: right 9px center;
+          background-size: 32px 32px;
+          -moz-background-size: 32px 32px;
+          -webkit-background-size: 32px 32px;
+          padding-right: 38px;
+          background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJtIDEyLjU5LDIwLjM0IDQuNTgsLTQuNTkgLTQuNTgsLTQuNTkgMS40MSwtMS40MSA2LDYgLTYsNiB6IiBmaWxsPSIjZmZmIiAvPjwvc3ZnPg==); }
+  .vc-container .ytp-settings-menu .ytp-menuitem-content, .vc-container .ytp-speed-menu .ytp-menuitem-content {
+    white-space: nowrap;
+    word-wrap: normal;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    max-width: 150px; }
+
+.vc-container .ytp-speed-menu {
+  width: 150px;
+  height: 250px; }
+  .vc-container .ytp-speed-menu .ytp-panel {
+    width: 150px;
+    height: 250px; }
+    .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-header {
+      border-bottom: 1px solid; }
+      .vc-container .ytp-speed-menu .ytp-panel .ytp-panel-header .ytp-menuitem .ytp-menuitem-content {
+        font-weight: bold;
+        padding: 0 10px 0 35px;
+        background-repeat: no-repeat;
+        background-position: left 3px center;
+        background-size: 32px 32px;
+        -moz-background-size: 32px 32px;
+        -webkit-background-size: 32px 32px;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMzIgMzIiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNIDE5LjQxLDIwLjA5IDE0LjgzLDE1LjUgMTkuNDEsMTAuOTEgMTgsOS41IGwgLTYsNiA2LDYgeiIgZmlsbD0iI2ZmZiIgLz48L3N2Zz4=); }
+    .vc-container .ytp-speed-menu .ytp-panel .ytp-menu-container {
+      height: 204px;
+      overflow-y: scroll; }
+      .vc-container .ytp-speed-menu .ytp-panel .ytp-menu-container .ytp-panel-menu .ytp-menuitem[aria-checked=true] .ytp-menuitem-content {
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMTAwJSIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIxMDAlIj48cGF0aCBkPSJNOSAxNi4yTDQuOCAxMmwtMS40IDEuNEw5IDE5IDIxIDdsLTEuNC0xLjRMOSAxNi4yeiIgZmlsbD0iI2ZmZiIgLz48L3N2Zz4=);
+        background-repeat: no-repeat;
+        background-position: left 10px center;
+        background-size: 18px 18px;
+        -moz-background-size: 18px 18px;
+        -webkit-background-size: 18px 18px; }
+
+.vc-container .ytp-chrome-top .ytp-chrome-top-buttons .ytp-share-button {
+  width: auto;
+  height: auto; }
+
+.vc-container .ytp-share-icon {
+  margin: auto;
+  width: 36px;
+  height: 36px; }
+
+.vc-container .ytp-share-title {
+  font-weight: 500;
+  text-align: center; }
+
+.vc-container .ytp-share-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 72;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  -moz-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0, 0, 0.2, 1); }
+
+.vc-container .ytp-share-panel-inner-content {
+  position: absolute;
+  top: 50%;
+  margin-top: -65px;
+  left: 0;
+  right: 0;
+  padding: 0 10%; }
+
+.vc-container .ytp-share-panel-loading-spinner {
+  display: none;
+  margin: 20px auto 0;
+  width: 32px;
+  height: 32px;
+  position: relative; }
+
+.vc-container .ytp-share-panel-close {
+  position: absolute;
+  top: 6px;
+  right: 12px;
+  padding: 6px;
+  width: 36px;
+  height: 36px; }
+  .vc-container .ytp-share-panel-close path {
+    fill: #aaa; }
+  .vc-container .ytp-share-panel-close:hover path {
+    fill: #fff; }
+
+.vc-container .ytp-share-panel-title {
+  font-size: 155%;
+  line-height: 20px; }
+
+.vc-container .ytp-share-panel-link {
+  display: block;
+  height: 28px;
+  margin-top: 18px;
+  text-overflow: ellipsis;
+  font-size: 218%;
+  font-weight: 500;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  outline: none; }
+
+.vc-container .ytp-share-panel-include-playlist {
+  display: none;
+  line-height: 15px;
+  margin-top: 12px;
+  font-size: 118%;
+  color: #999; }
+  .vc-container .ytp-share-panel-include-playlist input[type=checkbox] {
+    margin: 0 8px 0 0; }
+
+.vc-container .ytp-share-panel-service-buttons {
+  margin-top: 20px;
+  height: 44px; }
+
+.vc-container .ytp-share-panel-error {
+  margin-top: 20px;
+  font-size: 109%; }
+
+.vc-container .ytp-spinner {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 10%;
+  margin-left: -5%;
+  z-index: 18;
+  pointer-events: none; }
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg); } }
+
+.vc-container .spinner:before {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  border-top-color: #0294f9;
+  animation: spinner .6s linear infinite; }
+
+.vc-container .ytp-storyboard {
+  position: absolute;
+  left: 0;
+  bottom: 51px;
+  z-index: 59;
+  -moz-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  pointer-events: none; }
+
+.vc-container .ytp-storyboard-lens {
+  position: absolute;
+  overflow: hidden;
+  padding: 2px;
+  background-color: rgba(22, 22, 22, 0.8);
+  border-radius: 4px;
+  bottom: -2px; }
+
+.vc-container .ytp-storyboard-lens-timestamp-wrapper {
+  position: absolute;
+  width: 100%;
+  line-height: 12px;
+  text-align: center;
+  bottom: 2px;
+  margin-left: -2px; }
+
+.vc-container .ytp-storyboard-lens-timestamp {
+  display: inline-block;
+  height: 12px;
+  background-color: rgba(28, 28, 28, 0.9);
+  border-radius: 2px 2px 0 0;
+  padding: 5px 9px; }
+
+.vc-container .ytp-storyboard-framepreview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 16;
+  background: #000;
+  -moz-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  transition: opacity 0.1s cubic-bezier(0, 0, 0.2, 1); }
+
+.vc-container .ytp-storyboard-framepreview-img {
+  opacity: 0.4; }
+
+.vc-container .ytp-time-display {
+  font-size: 109%;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 5px;
+  white-space: nowrap;
+  line-height: 35px; }
+
+.vc-container .ytp-time-separator, .vc-container .ytp-time-duration {
+  color: #ddd; }
+
+.vc-container .ytp-chrome-controls .ytp-live-badge {
+  display: none;
+  width: auto;
+  text-transform: uppercase; }
+
+.vc-container .ytp-live-badge:before {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  vertical-align: 4%;
+  margin-right: 5px;
+  background: #757575;
+  content: '';
+  border-radius: 6px; }
+
+.vc-container .html5-video-player .ytp-live-badge[disabled] {
+  opacity: 1; }
+
+.vc-container .ytp-live-badge[disabled]:before {
+  background: #0294f9; }
+
+.vc-container .ytp-title {
+  overflow: hidden;
+  flex: 1; }
+
+.vc-container .ytp-title-channel-logo {
+  width: 40px;
+  height: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  float: left; }
+
+.vc-container .ytp-title-text {
+  vertical-align: top;
+  padding-top: 12px;
+  font-size: 18px; }
+
+.vc-container .ytp-title-subtext {
+  font-size: 13px; }
+
+.vc-container .ytp-title-text {
+  max-width: 100%;
+  padding-left: 4px;
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.vc-container .ytp-title-channel-name {
+  display: none;
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+.vc-container .ytp-title-view-count {
+  overflow: hidden;
+  white-space: nowrap;
+  word-wrap: normal;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: none; }
+
+.vc-container .ytp-title-channel {
+  background: transparent;
+  border-radius: 25px;
+  height: 50px;
+  margin-left: -5px;
+  overflow: hidden;
+  position: absolute;
+  top: 7px;
+  width: 50px;
+  display: none; }
+
+.vc-container .ytp-title-channel-logo {
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin: 5px; }
+
+.vc-container .ytp-title-channel-popup {
+  display: none; }
+
+.vc-container .ytp-title-channel-heading {
+  margin: 5px;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  align-self: center; }
+
+.vc-container .ytp-title-channel-text {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0; }
+
+.vc-container .ytp-title-channel-subtext {
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0; }
+
+@keyframes ytp-title-beacon-pulse {
+  0% {
+    background: black;
+    width: 40px;
+    height: 40px;
+    left: 5px;
+    top: 5px; }
+  to {
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 0; } }
+
+.vc-container .ytp-title-beacon {
+  border-radius: 25px;
+  display: none;
+  position: absolute;
+  z-index: -1;
+  -moz-animation: ytp-title-beacon-pulse 1s 5;
+  -webkit-animation: ytp-title-beacon-pulse 1s 5;
+  animation: ytp-title-beacon-pulse 1s 5; }
+
+.vc-container .ytp-tooltip {
+  position: absolute;
+  z-index: 1002;
+  font-size: 118%;
+  font-weight: 500;
+  line-height: 15px;
+  opacity: 0;
+  -moz-transition: -moz-transform 0.1s cubic-bezier(0, 0, 0.2, 1), opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 0.1s cubic-bezier(0, 0, 0.2, 1), opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  -ms-transition: -ms-transform 0.1s cubic-bezier(0, 0, 0.2, 1), opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1), opacity 0.1s cubic-bezier(0, 0, 0.2, 1);
+  pointer-events: none; }
+  .vc-container .ytp-tooltip.ytp-bottom {
+    -moz-transform: translateY(2px);
+    -ms-transform: translateY(2px);
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px); }
+  .vc-container .ytp-tooltip:not([aria-hidden=true]) {
+    opacity: 1;
+    -moz-transform: none;
+    -ms-transform: none;
+    -webkit-transform: none;
+    transform: none;
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.4, 0, 1, 1), opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.4, 0, 1, 1), opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+    -ms-transition: -ms-transform 0.1s cubic-bezier(0.4, 0, 1, 1), opacity 0.1s cubic-bezier(0.4, 0, 1, 1);
+    transition: transform 0.1s cubic-bezier(0.4, 0, 1, 1), opacity 0.1s cubic-bezier(0.4, 0, 1, 1); }
+  .vc-container .ytp-tooltip.ytp-preview {
+    padding: 2px;
+    background-color: rgba(28, 28, 28, 0.9);
+    border-radius: 2px; }
+
+.vc-container .ytp-tooltip-text-wrapper {
+  border-radius: 3px; }
+
+.vc-container .ytp-tooltip.ytp-preview:not(.ytp-text-detail) .ytp-tooltip-text-wrapper {
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  text-align: center; }
+
+.vc-container .ytp-tooltip-text {
+  display: block;
+  background-color: rgba(28, 28, 28, 0.9);
+  border-radius: 2px;
+  padding: 5px 9px; }
+
+.vc-container .ytp-tooltip.ytp-preview .ytp-tooltip-text {
+  display: inline;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
+
+.vc-container .ytp-tooltip-bg {
+  background-color: #000;
+  background-repeat: no-repeat;
+  position: relative;
+  display: none; }
+
+.vc-container .ytp-tooltip.ytp-preview .ytp-tooltip-bg {
+  display: block; }
+
+.vc-container .ytp-tooltip-duration, .vc-container .ytp-tooltip-title {
+  display: none; }
+
+.vc-container .ytp-tooltip-image {
+  width: 20px;
+  height: 20px;
+  border: 0;
+  border-radius: 10px;
+  position: absolute;
+  display: none;
+  top: 2px;
+  left: 7px;
+  background-size: contain; }
+
+.vc-container .ytp-unmute.ytp-popup {
+  position: absolute;
+  top: 36px;
+  left: 0;
+  z-index: 1001;
+  text-transform: uppercase;
+  color: #000;
+  font-size: 127%;
+  font-weight: 500;
+  background: none;
+  padding: 12px; }
+
+.vc-container .ytp-hide-info-bar .ytp-unmute {
+  top: 0; }
+
+.vc-container .ytp-unmute-inner {
+  padding-left: 3px;
+  padding-right: 12px;
+  background-color: white;
+  border-radius: 2px;
+  border-bottom: 1px solid #f1f1f1;
+  text-shadow: none; }
+
+.vc-container .ytp-unmute-icon {
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  vertical-align: middle; }
+
+.vc-container .ytp-unmute-text {
+  vertical-align: middle;
+  display: inline-block; }
+
+.vc-container .ytp-volume-panel {
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  -moz-transition: margin 0.2s cubic-bezier(0.4, 0, 1, 1), width 0.2s cubic-bezier(0.4, 0, 1, 1);
+  -webkit-transition: margin 0.2s cubic-bezier(0.4, 0, 1, 1), width 0.2s cubic-bezier(0.4, 0, 1, 1);
+  transition: margin 0.2s cubic-bezier(0.4, 0, 1, 1), width 0.2s cubic-bezier(0.4, 0, 1, 1);
+  cursor: pointer;
+  outline: 0; }
+
+.vc-container .ytp-volume-controls:hover > .ytp-volume-panel {
+  width: 52px; }
+
+.vc-container .ytp-volume-slider {
+  height: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.vc-container .ytp-volume-slider-handle {
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 6px;
+  margin-top: -6px;
+  background: #fff; }
+  .vc-container .ytp-volume-slider-handle:before, .vc-container .ytp-volume-slider-handle:after {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 50%;
+    height: 3px;
+    margin-top: -2px;
+    width: 64px; }
+  .vc-container .ytp-volume-slider-handle:before {
+    left: -58px;
+    background: #fff; }
+  .vc-container .ytp-volume-slider-handle:after {
+    left: 6px;
+    background: rgba(255, 255, 255, 0.2); }
+
+.vc-container .ytp-chrome-top .ytp-chrome-top-buttons .ytp-watch-later-button {
+  width: auto;
+  height: auto; }
+
+.vc-container .ytp-watch-later-icon {
+  margin: auto;
+  width: 36px;
+  height: 36px;
+  position: relative; }
+
+.vc-container .ytp-watch-later-title {
+  font-weight: 500;
+  text-align: center; }
+</style><div class="vc-container" style="width: 100%; height: 100%; position: absolute; z-index: 1;"><div class="html5-video-player ytp-hide-info-bar iv-module-loaded paused-mode" tabindex="-1" id="movie_player" data-version="/yts/jsbin/player-vfl3DiVMI/en_GB/base.js" aria-label="YouTube Video Player" mpml-on-mousemove="setNotIdle" mpml-on-mousedown="setNotIdle" mpml-on-mouseleave="setIdle">
+  <div mpml-hide="idle" style="display: none;">
+  <div class="ytp-gradient-top" data-layer="1"></div>
+  <div class="ytp-chrome-top ytp-watch-later-button-visible ytp-share-button-visible" data-layer="1">
+    <button class="ytp-playlist-menu-button ytp-button" aria-owns="ytp_playlist_menu" aria-haspopup="true" aria-label="Playlist" style="display: none;">
+      <div class="ytp-playlist-menu-button-icon">
+        <svg version="1.1" viewBox="0 0 36 36" width="100%">
+          <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-3"></use>
+          <path d="m 22.53,21.42 0,6.85 5.66,-3.42 -5.66,-3.42 0,0 z m -11.33,0 9.06,0 0,2.28 -9.06,0 0,-2.28 0,0 z m 0,-9.14 13.6,0 0,2.28 -13.6,0 0,-2.28 0,0 z m 0,4.57 13.6,0 0,2.28 -13.6,0 0,-2.28 0,0 z" fill="#fff" id="ytp-svg-3"></path>
+        </svg>
+      </div>
+      <div class="ytp-playlist-menu-button-text"></div>
+    </button>
+    <div class="ytp-title" data-visual-id="1">
+      <div class="ytp-title-channel">
+        <div class="ytp-title-beacon"></div>
+        <a class="ytp-title-channel-logo" target="_blank"></a>
+        <div class="ytp-title-channel-popup">
+          <div class="ytp-title-channel-heading">
+            <h2 class="ytp-title-channel-text">
+              <a target="_blank"></a>
+            </h2>
+            <h3 class="ytp-title-channel-subtext"></h3>
+          </div>
+        </div>
+      </div>
+      <div class="ytp-title-text"><a class="ytp-title-link yt-uix-sessionlink" target="_blank" data-sessionlink="feature=player-title" href=""></a>
+        <div class="ytp-title-subtext">
+          <a class="ytp-title-channel-name" target="_blank"></a>
+          <span class="ytp-title-view-count"></span>
+        </div>
+      </div>
+    </div>
+    <div class="ytp-chrome-top-buttons">
+      <button class="ytp-watch-later-button ytp-button" data-visual-id="2" title="Watch later" data-tooltip-image="">
+        <div class="ytp-watch-later-icon">
+          <svg version="1.1" viewBox="0 0 36 36" width="100%">
+            <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-4"></use>
+            <path class="ytp-svg-fill" d="M18,8 C12.47,8 8,12.47 8,18 C8,23.52 12.47,28 18,28 C23.52,28 28,23.52 28,18 C28,12.47 23.52,8 18,8 L18,8 Z M16,19.02 L16,12.00 L18,12.00 L18,17.86 L23.10,20.81 L22.10,22.54 L16,19.02 Z" id="ytp-svg-4"></path>
+          </svg>
+        </div>
+        <div class="ytp-watch-later-title"></div>
+      </button>
+      <button class="ytp-button ytp-share-button" title="Share" aria-haspopup="true" aria-owns="ytp-share-panel" data-visual-id="3">
+        <div class="ytp-share-icon">
+          <svg version="1.1" viewBox="0 0 36 36" width="100%">
+            <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-30"></use>
+            <path class="ytp-svg-fill" d="m 20.20,14.19 0,-4.45 7.79,7.79 -7.79,7.79 0,-4.56 C 16.27,20.69 12.10,21.81 9.34,24.76 8.80,25.13 7.60,27.29 8.12,25.65 9.08,21.32 11.80,17.18 15.98,15.38 c 1.33,-0.60 2.76,-0.98 4.21,-1.19 z" id="ytp-svg-30"></path>
+          </svg>
+        </div>
+        <div class="ytp-share-title"></div>
+      </button>
+    </div>
+  </div>
+  <button class="ytp-button ytp-cards-button" aria-label="Show cards" aria-owns="iv-drawer" aria-haspopup="true" data-layer="2" style="display: none;">
+    <span class="ytp-cards-button-icon-default">
+      <svg version="1.1" viewBox="0 0 36 36" width="100%">
+        <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-2"></use>
+        <path class="ytp-svg-fill" d="M18,8 C12.47,8 8,12.47 8,18 C8,23.52 12.47,28 18,28 C23.52,28 28,23.52 28,18 C28,12.47 23.52,8 18,8 L18,8 Z M17,16 L19,16 L19,24 L17,24 L17,16 Z M17,12 L19,12 L19,14 L17,14 L17,12 Z" id="ytp-svg-2"></path>
+      </svg>
+    </span>
+    <span class="ytp-cards-button-icon-shopping">
+      <svg version="1.1" viewBox="0 0 36 36" width="100%">
+        <path class="ytp-svg-shadow" d="M 27.99,18 A 9.99,9.99 0 1 1 8.00,18 9.99,9.99 0 1 1 27.99,18 z"></path>
+        <path class="ytp-svg-fill" d="M 18,8 C 12.47,8 8,12.47 8,18 8,23.52 12.47,28 18,28 23.52,28 28,23.52 28,18 28,12.47 23.52,8 18,8 z m -4.68,4 4.53,0 c .35,0 .70,.14 .93,.37 l 5.84,5.84 c .23,.23 .37,.58 .37,.93 0,.35 -0.13,.67 -0.37,.90 L 20.06,24.62 C 19.82,24.86 19.51,25 19.15,25 c -0.35,0 -0.70,-0.14 -0.93,-0.37 L 12.37,18.78 C 12.13,18.54 12,18.20 12,17.84 L 12,13.31 C 12,12.59 12.59,12 13.31,12 z m .96,1.31 c -0.53,0 -0.96,.42 -0.96,.96 0,.53 .42,.96 .96,.96 .53,0 .96,-0.42 .96,-0.96 0,-0.53 -0.42,-0.96 -0.96,-0.96 z" fill-opacity="1"></path>
+        <path class="ytp-svg-shadow-fill" d="M 24.61,18.22 18.76,12.37 C 18.53,12.14 18.20,12 17.85,12 H 13.30 C 12.58,12 12,12.58 12,13.30 V 17.85 c 0,.35 .14,.68 .38,.92 l 5.84,5.85 c .23,.23 .55,.37 .91,.37 .35,0 .68,-0.14 .91,-0.38 L 24.61,20.06 C 24.85,19.83 25,19.50 25,19.15 25,18.79 24.85,18.46 24.61,18.22 z M 14.27,15.25 c -0.53,0 -0.97,-0.43 -0.97,-0.97 0,-0.53 .43,-0.97 .97,-0.97 .53,0 .97,.43 .97,.97 0,.53 -0.43,.97 -0.97,.97 z" fill="#000" fill-opacity="0.15"></path>
+      </svg>
+    </span>
+  </button>
+  <!-- big unmute button at the top, no idea when useful -->
+  <div class="ytp-unmute ytp-popup" data-layer="3" style="display: none;">
+    <div class="ytp-unmute-inner">
+      <div class="ytp-unmute-icon">
+        <svg version="1.1" viewBox="0 0 36 36" width="100%">
+          <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-1"></use>
+          <path class="ytp-svg-fill" d="m 21.48,17.98 c 0,-1.77 -1.02,-3.29 -2.5,-4.03 v 2.21 l 2.45,2.45 c .03,-0.2 .05,-0.41 .05,-0.63 z m 2.5,0 c 0,.94 -0.2,1.82 -0.54,2.64 l 1.51,1.51 c .66,-1.24 1.03,-2.65 1.03,-4.15 0,-4.28 -2.99,-7.86 -7,-8.76 v 2.05 c 2.89,.86 5,3.54 5,6.71 z M 9.25,8.98 l -1.27,1.26 4.72,4.73 H 7.98 v 6 H 11.98 l 5,5 v -6.73 l 4.25,4.25 c -0.67,.52 -1.42,.93 -2.25,1.18 v 2.06 c 1.38,-0.31 2.63,-0.95 3.69,-1.81 l 2.04,2.05 1.27,-1.27 -9,-9 -7.72,-7.72 z m 7.72,.99 -2.09,2.08 2.09,2.09 V 9.98 z" id="ytp-svg-1"></path>
+        </svg>
+      </div>
+      <div class="ytp-unmute-text">Unmute</div>
+    </div>
+  </div>
+  
+  <!-- play button to show when loaded and not started -->
+  <div class="ytp-thumbnail-overlay ytp-cued-thumbnail-overlay" data-layer="5" mpml-show="status | eq 0" mpml-on-click="play" style="display: none;">
+    <div class="ytp-thumbnail-overlay-image"></div>
+    <button class="ytp-large-play-button ytp-button" aria-label="">
+      <svg version="1.1" viewBox="0 0 68 48" width="100%">
+        <path class="ytp-large-play-button-bg" d="m .66,37.62 c 0,0 .66,4.70 2.70,6.77 2.58,2.71 5.98,2.63 7.49,2.91 5.43,.52 23.10,.68 23.12,.68 .00,-1.3e-5 14.29,-0.02 23.81,-0.71 1.32,-0.15 4.22,-0.17 6.81,-2.89 2.03,-2.07 2.70,-6.77 2.70,-6.77 0,0 .67,-5.52 .67,-11.04 l 0,-5.17 c 0,-5.52 -0.67,-11.04 -0.67,-11.04 0,0 -0.66,-4.70 -2.70,-6.77 C 62.03,.86 59.13,.84 57.80,.69 48.28,0 34.00,0 34.00,0 33.97,0 19.69,0 10.18,.69 8.85,.84 5.95,.86 3.36,3.58 1.32,5.65 .66,10.35 .66,10.35 c 0,0 -0.55,4.50 -0.66,9.45 l 0,8.36 c .10,4.94 .66,9.45 .66,9.45 z" fill="#1f1f1e" fill-opacity="0.81"></path>
+        <path d="m 26.96,13.67 18.37,9.62 -18.37,9.55 -0.00,-19.17 z" fill="#fff"></path>
+        <path d="M 45.02,23.46 45.32,23.28 26.96,13.67 43.32,24.34 45.02,23.46 z" fill="#ccc"></path>
+      </svg>
+    </button>
+  </div>
+  
+  <!--this is the buffering icon-->
+  <!-- https://stephanwagner.me/only-css-loading-spinner -->
+  <div class="ytp-spinner spinner" data-layer="5" mpml-show="isBuffering" style="display: none;">
+    <div class="ytp-spinner-message" style="display: none;">If playback doesn't begin shortly, try restarting your device.</div>
+  </div>
+  
+  <!--  this is the momentary pause icon that is shown when pausing or playing
+  not used, aesthetic  -->
+  <div class="ytp-bezel" role="status" data-layer="5" aria-label="Pause" style="display: none;">
+    <div class="ytp-bezel-icon">
+      <svg version="1.1" viewBox="0 0 36 36" width="100%">
+        <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-28"></use>
+        <path class="ytp-svg-fill" d="M 12,26 16,26 16,10 12,10 z M 21,26 25,26 25,10 21,10 z" id="ytp-svg-28"></path>
+      </svg>
+    </div>
+  </div>
+  
+  <!-- show small text such as "advertisement"at the bottom -->
+  <div class="ytp-paid-content-overlay" aria-live="assertive" aria-atomic="true" data-layer="5" style="display: none;">
+    <div class="ytp-button ytp-paid-content-overlay-text">Advertisement</div>
+  </div>
+  <div data-layer="5" style="max-width: 200px; top: 216px; left: 12px; display: none;" class="ytp-tooltip ytp-bottom ytp-preview">
+    <div class="ytp-tooltip-bg" style="width: 158px; height: 90px;">
+      <div class="ytp-tooltip-duration">1527.85</div>
+    </div>
+    <div class="ytp-tooltip-text-wrapper">
+      <div class="ytp-tooltip-image"></div>
+      <div class="ytp-tooltip-title"></div>
+      <span class="ytp-tooltip-text">0:00</span>
+    </div>
+  </div>
+  
+  <!-- show playlist videos here -->
+  <div class="ytp-storyboard" data-layer="5" style="display: none;">
+    <div class="ytp-storyboard-filmstrip"></div>
+    <div class="ytp-storyboard-lens">
+      <div class="ytp-storyboard-lens-thumbnail"></div>
+      <div class="ytp-storyboard-lens-timestamp-wrapper">
+        <span class="ytp-storyboard-lens-timestamp"></span>
+      </div>
+    </div>
+  </div>
+  <div class="ytp-storyboard-framepreview" data-layer="5" style="display: none;">
+    <div class="ytp-storyboard-framepreview-img"></div>
+  </div>
+  <div class="ytp-ad-persistent-progress-bar-container" data-layer="5" style="display: none;">
+    <div class="ytp-ad-persistent-progress-bar"></div>
+  </div>
+  
+  <!-- chromecast icon -->
+  <div class="ytp-remote" data-layer="5" style="display: none;">
+    <div class="ytp-remote-display-status">
+      <div class="ytp-remote-display-status-icon">
+        <svg version="1.1" viewBox="0 0 36 36" width="100%">
+          <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-23"></use>
+          <path d="M7,24 L7,27 L10,27 C10,25.34 8.66,24 7,24 L7,24 Z M7,20 L7,22 C9.76,22 12,24.24 12,27 L14,27 C14,23.13 10.87,20 7,20 L7,20 Z M25,13 L11,13 L11,14.63 C14.96,15.91 18.09,19.04 19.37,23 L25,23 L25,13 L25,13 Z M7,16 L7,18 C11.97,18 16,22.03 16,27 L18,27 C18,20.92 13.07,16 7,16 L7,16 Z M27,9 L9,9 C7.9,9 7,9.9 7,11 L7,14 L9,14 L9,11 L27,11 L27,25 L20,25 L20,27 L27,27 C28.1,27 29,26.1 29,25 L29,11 C29,9.9 28.1,9 27,9 L27,9 Z" fill="#fff" id="ytp-svg-23"></path>
+        </svg>
+      </div>
+      <div class="ytp-remote-display-status-text"></div>
+    </div>
+  </div>
+  
+  <!--  play next button to be perhaps shown at the end of video  -->
+  <div class="ytp-upnext ytp-upnext-autoplay-paused" data-layer="5" style="display: none;">
+    <div class="ytp-thumbnail-overlay-image"></div>
+    <div class="ytp-thumbnail-overlay-curtain"></div>
+    <span class="ytp-upnext-top">
+      <span class="ytp-upnext-header">Up Next</span>
+      <span class="ytp-upnext-title"></span>
+      <span class="ytp-upnext-author"></span>
+    </span>
+    <a class="ytp-upnext-autoplay-icon" aria-label="Play next video">
+      <svg version="1.1" viewBox="0 0 98 98" width="100%">
+        <circle class="ytp-svg-autoplay-circle" cx="49" cy="49" fill="#000" fill-opacity="0.8" r="48"></circle>
+        <circle class="ytp-svg-autoplay-ring" cx="-49" cy="49" fill-opacity="0" r="46.5" stroke="#FFFFFF" stroke-dasharray="293" stroke-dashoffset="-293.0078775939941" stroke-width="4" transform="rotate(-90)"></circle>
+        <polygon class="ytp-svg-autoplay-triangle" fill="#fff" points="32,27 72,49 32,71"></polygon>
+      </svg>
+    </a>
+    <span class="ytp-upnext-bottom">
+      <span class="ytp-upnext-cancel">
+        <button class="ytp-upnext-cancel-button ytp-button" tabindex="0" aria-label="Cancel autoplay">Cancel</button>
+      </span>
+      <span class="ytp-upnext-paused">Auto-play is paused</span>
+    </span>
+    <span class="ytp-upnext-close">
+      <button class="ytp-upnext-close-button ytp-button" aria-label="Cancel autoplay"></button>
+    </span>
+  </div>
+  <div class="html5-endscreen ytp-player-content videowall-endscreen" data-layer="5" style="display: none;">
+    <button class="ytp-button ytp-endscreen-previous" aria-label="Previous">
+      <svg version="1.1" viewBox="0 0 32 32" width="100%">
+        <path d="M 19.41,20.09 14.83,15.5 19.41,10.91 18,9.5 l -6,6 6,6 z" fill="#fff"></path>
+      </svg>
+    </button>
+    <div class="ytp-endscreen-content"></div>
+    <button class="ytp-button ytp-endscreen-next" aria-label="Next">
+      <svg version="1.1" viewBox="0 0 32 32" width="100%">
+        <path d="m 12.59,20.34 4.58,-4.59 -4.58,-4.59 1.41,-1.41 6,6 -6,6 z" fill="#fff"></path>
+      </svg>
+    </button>
+  </div>
+  <div class="ytp-player-content ytp-iv-player-content" data-layer="5"></div>
+  <div class="ytp-iv-video-content" mpml-on-click="togglePlayback" data-layer="5" style="width: 100%; height: 100%; left: 0px; top: 0px;">
+    <div style="width: 100%; height: 100%; left: 0px; top: 0px;" mpml-on-click="set" mpml-click-args="menu,"></div>
+  </div>
+  <!--
+    top link can be used to promote a link to the very top. This is used to
+    show authenticating message when used in Chrome Pepperflash(>58) and also on
+    safari to open new tab for cookies
+  -->
+  <div class="ytp-share-panel" mpml-show="showTopLink" style="text-align: center; position: absolute; z-index: 20; display: none;">
+    <a mpml-href="topLinkUrl" target="_blank">
+      <p style="font-size: 20px;" mpml-html="topLinkMessage"></p>
+    <img mpml-src="topLinkImage" style="width: 50%;height:auto;">
+    </a>
+  </div>
+  <div class="ytp-cards-teaser" data-layer="6" style="display: none;">
+    <div class="ytp-cards-teaser-box"></div>
+    <div class="ytp-cards-teaser-text">
+      <span class="ytp-cards-teaser-label"></span>
+    </div>
+  </div>
+  <div class="ytp-playlist-menu" role="dialog" id="ytp_playlist_menu" data-layer="6" style="display: none;">
+    <div class="ytp-playlist-menu-header">
+      <div class="ytp-playlist-menu-title">
+        <a class="ytp-playlist-menu-title-name"></a>
+        <button class="ytp-playlist-menu-close ytp-button" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="100%">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#fff"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="ytp-playlist-menu-subtitle"></div>
+    </div>
+    <div class="ytp-playlist-menu-items" role="menu"></div>
+  </div>
+  
+  <!--this is a copy of share panel modified to create error panel-->
+  <div class="ytp-share-panel" id="ytp-error-panel" role="dialog" aria-labelledby="ytp-share-panel-title" data-layer="6" mpml-show="hasError" style="display: none;">
+    <!--the following close button if functional should be such that next error is visible -->
+    <button class="ytp-share-panel-close ytp-button" title="Close" mpml-on-click="set" mpml-click-args="hasError,false,boolean">
+      <svg viewBox="0 0 24 24" width="100%">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#fff"></path>
+      </svg>
+    </button>
+    <div class="ytp-share-panel-inner-content">
+      <div class="ytp-share-panel-title" id="ytp-share-panel-title">Error</div>
+      <div class="ytp-share-panel-error"></div>
+    </div>
+  </div>
+  <div class="ytp-share-panel" id="ytp-share-panel" role="dialog" aria-labelledby="ytp-share-panel-title" data-layer="6" style="display: none;">
+    <button class="ytp-share-panel-close ytp-button" title="Close">
+      <svg viewBox="0 0 24 24" width="100%">
+        <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#fff"></path>
+      </svg>
+    </button>
+    <div class="ytp-share-panel-inner-content">
+      <div class="ytp-share-panel-title" id="ytp-share-panel-title">Share</div>
+      <a class="ytp-share-panel-link ytp-no-contextmenu" target="_blank" title="Share link" aria-label="Share link"></a>
+      <label class="ytp-share-panel-include-playlist">
+        <input class="ytp-share-panel-include-playlist-checkbox" type="checkbox" checked="true">Include playlist</label>
+      <div class="ytp-share-panel-loading-spinner">
+        <div class="ytp-spinner-dots">
+          <div class="ytp-spinner-dot ytp-spinner-dot-0"></div>
+          <div class="ytp-spinner-dot ytp-spinner-dot-1"></div>
+          <div class="ytp-spinner-dot ytp-spinner-dot-2"></div>
+          <div class="ytp-spinner-dot ytp-spinner-dot-3"></div>
+          <div class="ytp-spinner-dot ytp-spinner-dot-4"></div>
+          <div class="ytp-spinner-dot ytp-spinner-dot-5"></div>
+          <div class="ytp-spinner-dot ytp-spinner-dot-6"></div>
+          <div class="ytp-spinner-dot ytp-spinner-dot-7"></div>
+        </div>
+      </div>
+      <div class="ytp-share-panel-service-buttons"></div>
+      <div class="ytp-share-panel-error">An error occurred while retrieving sharing information. Please try again later.</div>
+    </div>
+  </div>
+  <div class="ytp-multicam-menu" role="dialog" data-layer="6" style="display: none;">
+    <div class="ytp-multicam-menu-header">
+      <div class="ytp-multicam-menu-title">Switch camera
+        <button class="ytp-multicam-menu-close ytp-button" aria-label="Close">
+          <svg viewBox="0 0 24 24" width="100%">
+            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#fff"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="ytp-multicam-menu-items"></div>
+  </div>
+  <div class="ytp-popup ytp-settings-menu" data-layer="7" mpml-show="menu | eq 'topLevel'" style="display: none;">
+    <div class="ytp-panel">
+      <div class="ytp-panel-menu" role="menu">
+        <div class="ytp-menuitem" aria-haspopup="true" role="menuitem" tabindex="0" mpml-on-click="set" mpml-click-args="menu,speed">
+          <div class="ytp-menuitem-label">Speed</div>
+          <div class="ytp-menuitem-content">
+            <span mpml-show="playbackRate | neq 1" style="display: none;">1</span>
+            <span mpml-show="playbackRate | eq 1" style="">Normal</span>
+          </div>
+        </div>
+      </div>
+      <div class="ytp-panel-menu" role="menu" mpml-show="availableCaptions" style="display: none;">
+        <div class="ytp-menuitem" aria-haspopup="true" role="menuitem" tabindex="0" mpml-on-click="set" mpml-click-args="menu,captions">
+          <div class="ytp-menuitem-label">Captions</div>
+          <div class="ytp-menuitem-content">
+            <span><span mpml-show="abrEnabled | eq 1" style=""></span> </span>
+          </div>
+        </div>
+      </div>
+      <div class="ytp-panel-menu" role="menu">
+        <div class="ytp-menuitem" aria-haspopup="true" role="menuitem" tabindex="0" mpml-on-click="set" mpml-click-args="menu,quality" mpml-show="activeVariant" style="">
+          <div class="ytp-menuitem-label">Quality</div>
+          <div class="ytp-menuitem-content">
+            <span><span mpml-show="abrEnabled | eq 1" style="">(Auto)</span> 249 kbps</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ytp-popup ytp-speed-menu" data-layer="7" mpml-show="menu | eq 'speed'" style="display: none;">
+    <div class="ytp-panel">
+      <div class="ytp-panel-header" role="header">
+        <div class="ytp-menuitem" role="menuitem">
+          <div class="ytp-menuitem-content" mpml-on-click="set" mpml-click-args="menu,topLevel">Settings</div>
+          
+        </div>
+      </div>
+      <div class="ytp-menu-container">
+        <div class="ytp-panel-menu" role="menu">
+          <!-- rivets: each-rate --><div class="ytp-menuitem" mpml-aria-checked="playbackRate | eq rate" role="menuitem" mpml-on-click="set" mpml-click-args="menu,topLevel" aria-checked="false">
+            <div class="ytp-menuitem-content" mpml-on-click="setPlaybackRate" mpml-click-args="rate" mpml-click-args-type="float" click-args="0.25">
+              <span mpml-show="rate | neq 1">0.25</span>
+              <span mpml-show="rate | eq 1" style="display: none;">Normal</span>
+            </div>
+          </div><div class="ytp-menuitem" mpml-aria-checked="playbackRate | eq rate" role="menuitem" mpml-on-click="set" mpml-click-args="menu,topLevel" aria-checked="false">
+            <div class="ytp-menuitem-content" mpml-on-click="setPlaybackRate" mpml-click-args="rate" mpml-click-args-type="float" click-args="0.5">
+              <span mpml-show="rate | neq 1">0.5</span>
+              <span mpml-show="rate | eq 1" style="display: none;">Normal</span>
+            </div>
+          </div><div class="ytp-menuitem" mpml-aria-checked="playbackRate | eq rate" role="menuitem" mpml-on-click="set" mpml-click-args="menu,topLevel" aria-checked="true">
+            <div class="ytp-menuitem-content" mpml-on-click="setPlaybackRate" mpml-click-args="rate" mpml-click-args-type="float" click-args="1">
+              <span mpml-show="rate | neq 1" style="display: none;">1</span>
+              <span mpml-show="rate | eq 1">Normal</span>
+            </div>
+          </div><div class="ytp-menuitem" mpml-aria-checked="playbackRate | eq rate" role="menuitem" mpml-on-click="set" mpml-click-args="menu,topLevel" aria-checked="false">
+            <div class="ytp-menuitem-content" mpml-on-click="setPlaybackRate" mpml-click-args="rate" mpml-click-args-type="float" click-args="1.25">
+              <span mpml-show="rate | neq 1">1.25</span>
+              <span mpml-show="rate | eq 1" style="display: none;">Normal</span>
+            </div>
+          </div><div class="ytp-menuitem" mpml-aria-checked="playbackRate | eq rate" role="menuitem" mpml-on-click="set" mpml-click-args="menu,topLevel" aria-checked="false">
+            <div class="ytp-menuitem-content" mpml-on-click="setPlaybackRate" mpml-click-args="rate" mpml-click-args-type="float" click-args="1.5">
+              <span mpml-show="rate | neq 1">1.5</span>
+              <span mpml-show="rate | eq 1" style="display: none;">Normal</span>
+            </div>
+          </div><div class="ytp-menuitem" mpml-aria-checked="playbackRate | eq rate" role="menuitem" mpml-on-click="set" mpml-click-args="menu,topLevel" aria-checked="false">
+            <div class="ytp-menuitem-content" mpml-on-click="setPlaybackRate" mpml-click-args="rate" mpml-click-args-type="float" click-args="2">
+              <span mpml-show="rate | neq 1">2</span>
+              <span mpml-show="rate | eq 1" style="display: none;">Normal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ytp-popup ytp-speed-menu" data-layer="7" mpml-show="menu | eq 'quality'" style="display: none;">
+    <div class="ytp-panel">
+      <div class="ytp-panel-header" role="header">
+        <div class="ytp-menuitem" role="menuitem">
+          <div class="ytp-menuitem-content" mpml-on-click="set" mpml-click-args="menu,topLevel">Settings</div>
+        </div>
+      </div>
+      <div class="ytp-menu-container">
+        <div class="ytp-panel-menu" role="menu">
+          <div class="ytp-menuitem" role="menuitem" mpml-on-click="set" mpml-click-args="menu,topLevel" mpml-show="abrEnabled | neq -1">
+            <div class="ytp-menuitem-content" mpml-on-click="selectQualityTrack" mpml-click-args="-1" mpml-click-args-type="float" click-args="-1">
+              <span>Auto</span>
+            </div>
+          </div>
+          <!-- rivets: each-quality --><div class="ytp-menuitem" mpml-aria-checked="playbackRate | eq rate" role="menuitem" mpml-on-click="set" mpml-click-args="menu,topLevel" aria-checked="false">
+            <div class="ytp-menuitem-content" mpml-on-click="selectQualityTrack" mpml-click-args="quality.id" mpml-click-args-type="float" click-args="3">
+              <span>249 kbps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="ytp-popup ytp-speed-menu" data-layer="7" mpml-show="menu | eq 'captions'" style="display: none;">
+    <div class="ytp-panel">
+      <div class="ytp-panel-header" role="header">
+        <div class="ytp-menuitem" role="menuitem">
+          <div class="ytp-menuitem-content" mpml-on-click="set" mpml-click-args="menu,topLevel">Settings</div>
+        </div>
+      </div>
+      <div class="ytp-menu-container">
+        <div class="ytp-panel-menu" role="menu">
+          <!-- rivets: each-caption -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ytp-gradient-bottom" data-layer="9"></div>
+  <div class="ytp-chrome-bottom" data-layer="9" style="width: 100%;">
+    <div class="ytp-progress-bar-container" style="height: 5px;">
+      <div class="ytp-progress-bar" tabindex="0" role="slider" aria-label="Seek slider" mpml-on-click="seek" aria-valuemin="0" mpml-aria-valuemax="duration" mpml-aria-valuenow="currentTime" draggable="true" style="touch-action: none;" aria-valuenow="135.395801" aria-valuemax="1527.85">
+        <div class="ytp-progress-bar-padding"></div>
+        <div class="ytp-progress-list">
+          <div class="ytp-play-progress ytp-swatch-background-color" mpml-style="currentTime | / duration | prefix 'left: 0px; transform: scaleX(' | suffix ');'" style="left: 0px; transform: scaleX(0.0886185168701116);"></div>
+          <div class="ytp-load-progress" mpml-style="bufferLength | / duration | prefix 'left: 0px; transform: scaleX(' | suffix ');'" style="left: 0px; transform: scaleX(0.6812259331740682);"></div>
+          <div class="ytp-hover-progress" style="left: 0.0663132px; transform: scaleX(-0.000107651);"></div>
+          <div class="ytp-clip-start-exclude" style="width: 0%;"></div>
+          <div class="ytp-clip-end-exclude" style="left: 100%; width: 0%;"></div>
+          <div class="ytp-ad-progress-list"></div>
+          <div class="ytp-marker-crenellation-list"></div>
+          <div class="ytp-marker-progress-list"></div>
+        </div>
+        <div class="ytp-scrubber-container" style="display: none;">
+          <div class="ytp-scrubber-button ytp-swatch-background-color" style="height: 13px;">
+            <div class="ytp-scrubber-pull-indicator"></div>
+          </div>
+        </div>
+      </div>
+      <div class="ytp-bound-time-left">02:15</div>
+      <div class="ytp-bound-time-right">25:27</div>
+      <div class="ytp-clip-start" title="Watch entire video" draggable="true" style="touch-action: none; left: 0%;">
+        <svg version="1.1" viewBox="0 0 14 14" width="100%">
+          <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-6"></use>
+          <path d="M12,14 L9,11 L9,3 L12,0 L5,0 L5,14 L12,14 Z" fill="#eaeaea" id="ytp-svg-6"></path>
+        </svg>
+      </div>
+      <div class="ytp-clip-end" title="Watch entire video" draggable="true" style="touch-action: none; left: 100%;">
+        <svg version="1.1" viewBox="0 0 14 14" width="100%">
+          <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-7"></use>
+          <path d="M2,14 L5,11 L5,3 L2,0 L9,0 L9,14 L2,14 L2,14 Z" fill="#eaeaea" id="ytp-svg-7"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="ytp-chrome-controls">
+      <div class="ytp-left-controls">
+        <a class="ytp-replay-button ytp-button" mpml-show="status | neq 0" title="Replay" mpml-on-click="seek" mpml-click-args="currentTime | - 15" click-args="120.395801" style="">
+<svg fill="#FFFFFF" height="24" viewBox="-5 0 34 24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M0 0h24v24H0V0z" id="a"></path>
+    </defs>
+    <clipPath id="b">
+        <use overflow="visible" xlink:href="#a"></use>
+    </clipPath>
+    <path clip-path="url(#b)" d="M 12,5 V 1 l -5,5 5,5 V 7 c 3.3,0 6,2.7 6,6 0,3.3 -2.7,6 -6,6 C 8.7,19 6,16.3 6,13 H 4 c 0,4.4 3.6,8 8,8 4.4,0 8,-3.6 8,-8 0,-4.4 -3.6,-8 -8,-8 z"></path>
+</svg>
+        </a>
+        <button class="ytp-play-button ytp-button" aria-label="Play" mpml-hide="status | eq 1" mpml-on-click="play" style="">
+          <svg version="1.1" viewBox="0 0 36 36" width="100%">
+            <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-29"></use>
+            <path class="ytp-svg-fill" d="M 12,26 18.5,22 18.5,14 12,10 z M 18.5,22 25,18 25,18 18.5,14 z" id="ytp-svg-29"></path>
+          </svg>
+        </button>
+        <button class="ytp-play-button ytp-button" aria-label="Pause" mpml-show="status | eq 1" mpml-on-click="pause" style="display: none;">
+          <svg version="1.1" viewBox="0 0 36 36" width="100%">
+            <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-44"></use>
+            <path class="ytp-svg-fill" d="M 12,26 16,26 16,10 12,10 z M 21,26 25,26 25,10 21,10 z" id="ytp-svg-44"></path>
+          </svg>
+        </button>
+        <a class="ytp-next-button ytp-button" aria-disabled="false" style="display: none;" data-duration="" data-preview="" data-tooltip-text="" href="" title="Next">
+          <svg version="1.1" viewBox="0 0 36 36" width="100%">
+            <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-10"></use>
+            <path class="ytp-svg-fill" d="M 12,24 20.5,18 12,12 V 24 z M 22,12 v 12 h 2 V 12 h -2 z" id="ytp-svg-10"></path>
+          </svg>
+        </a>
+        <a class="ytp-forward-button ytp-button" mpml-show="status | neq 0" title="Forward" mpml-on-click="seek" mpml-click-args="currentTime | + 15" click-args="150.395801" style="">
+
+<svg fill="#FFFFFF" height="24" viewBox="-5 0 34 24" width="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <path d="M24 24H0V0h24v24z" id="a"></path>
+    </defs>
+    <clipPath id="b">
+        <use overflow="visible" xlink:href="#a"></use>
+    </clipPath>
+    <path clip-path="url(#b)" d="m 4,13 c 0,4.4 3.6,8 8,8 4.4,0 8,-3.6 8,-8 h -2 c 0,3.3 -2.7,6 -6,6 C 8.7,19 6,16.3 6,13 6,9.7 8.7,7 12,7 v 4 L 17,6 12,1 V 5 C 7.6,5 4,8.6 4,13 Z"></path>
+</svg>
+        </a>
+        <span class="ytp-volume-controls">
+          <button class="ytp-mute-button ytp-button ytp-button-volume" mpml-on-click="mute" data-visual-id="4" title="Mute" value="loud" mpml-show="muted | !">
+            <svg version="1.1" viewBox="0 0 36 36" width="100%">
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-12"></use>
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-13"></use>
+              <defs>
+                <clipPath id="ytp-svg-volume-animation-mask">
+                  <path d="m 14.35,-0.14 -5.86,5.86 20.73,20.78 5.86,-5.91 z"></path>
+                  <path d="M 7.07,6.87 -1.11,15.33 19.61,36.11 27.80,27.60 z"></path>
+                  <path class="ytp-svg-volume-animation-mover" d="M 9.09,5.20 6.47,7.88 26.82,28.77 29.66,25.99 z" transform="translate(0, 0)"></path>
+                </clipPath>
+                <clipPath id="ytp-svg-volume-animation-slash-mask">
+                  <path class="ytp-svg-volume-animation-mover" d="m -11.45,-15.55 -4.44,4.51 20.45,20.94 4.55,-4.66 z" transform="translate(0, 0)"></path>
+                </clipPath>
+              </defs>
+              <path class="ytp-svg-fill ytp-svg-volume-animation-speaker" clip-path="url(#ytp-svg-volume-animation-mask)" d="M8,21 L12,21 L17,26 L17,10 L12,15 L8,15 L8,21 Z M19,14 L19,22 C20.48,21.32 21.5,19.77 21.5,18 C21.5,16.26 20.48,14.74 19,14 ZM19,11.29 C21.89,12.15 24,14.83 24,18 C24,21.17 21.89,23.85 19,24.71 L19,26.77 C23.01,25.86 26,22.28 26,18 C26,13.72 23.01,10.14 19,9.23 L19,11.29 Z" fill="#fff" id="ytp-svg-12"></path>
+              <path class="ytp-svg-fill ytp-svg-volume-animation-hider" clip-path="url(#ytp-svg-volume-animation-slash-mask)" d="M 9.25,9 7.98,10.27 24.71,27 l 1.27,-1.27 Z" fill="#fff" id="ytp-svg-13" style="display: none;"></path>
+            </svg>
+          </button>
+          <button class="ytp-mute-button ytp-button ytp-button-volume" mpml-on-click="unmute" data-visual-id="4" title="Mute" value="quiet" mpml-show="muted" style="display: none;">
+            <svg version="1.1" viewBox="0 0 36 36" width="100%">
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-452"></use>
+              <path class="ytp-svg-fill" d="m 21.48,17.98 c 0,-1.77 -1.02,-3.29 -2.5,-4.03 v 2.21 l 2.45,2.45 c .03,-0.2 .05,-0.41 .05,-0.63 z m 2.5,0 c 0,.94 -0.2,1.82 -0.54,2.64 l 1.51,1.51 c .66,-1.24 1.03,-2.65 1.03,-4.15 0,-4.28 -2.99,-7.86 -7,-8.76 v 2.05 c 2.89,.86 5,3.54 5,6.71 z M 9.25,8.98 l -1.27,1.26 4.72,4.73 H 7.98 v 6 H 11.98 l 5,5 v -6.73 l 4.25,4.25 c -0.67,.52 -1.42,.93 -2.25,1.18 v 2.06 c 1.38,-0.31 2.63,-0.95 3.69,-1.81 l 2.04,2.05 1.27,-1.27 -9,-9 -7.72,-7.72 z m 7.72,.99 -2.09,2.08 2.09,2.09 V 9.98 z" id="ytp-svg-452"></path>
+            </svg>
+          </button>
+          <div class="ytp-volume-panel" role="slider" aria-valuemin="0" aria-valuemax="100" tabindex="0" mpml-on-click="setVolume" mpml-aria-valuenow="volume | * 100" aria-valuetext="100% volume" aria-valuenow="100">
+            <div class="ytp-volume-slider" draggable="true" style="touch-action: none;">
+              <div class="ytp-volume-slider-handle" mpml-style="volume | * 40 | prefix 'left: ' | suffix 'px'" style="left: 40px"></div>
+            </div>
+          </div>
+        </span>
+        <div class="ytp-time-display notranslate">
+          <span class="ytp-time-current">02:15</span>
+          <span class="ytp-time-separator"> / </span>
+          <span class="ytp-time-duration">25:27</span>
+          <button class="ytp-live-badge ytp-button" disabled="true">Live</button>
+        </div>
+      </div>
+      <div class="ytp-right-controls">
+        <span mpml-show="availableCaptions" style="display: none;">
+        <button class="ytp-subtitles-button ytp-button" aria-pressed="false" title="Subtitles/closed captions" mpml-hide="captionEnabled" mpml-on-click="setCaptionsEnabled" mpml-click-args="true" mpml-click-args-type="boolean" click-args="true">
+          <svg version="1.1" viewBox="0 0 36 36" width="100%">
+            <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-14"></use>
+            <path d="M11,11 C9.9,11 9,11.9 9,13 L9,23 C9,24.1 9.9,25 11,25 L25,25 C26.1,25 27,24.1 27,23 L27,13 C27,11.9 26.1,11 25,11 L11,11 Z M11,17 L14,17 L14,19 L11,19 L11,17 L11,17 Z M20,23 L11,23 L11,21 L20,21 L20,23 L20,23 Z M25,23 L22,23 L22,21 L25,21 L25,23 L25,23 Z M25,19 L16,19 L16,17 L25,17 L25,19 L25,19 Z" fill="#fff" id="ytp-svg-14"></path>
+          </svg>
+        </button>
+        <button class="ytp-subtitles-button ytp-button" aria-pressed="true" title="Subtitles/closed captions" mpml-show="captionEnabled" mpml-on-click="setCaptionsEnabled" mpml-click-args="false" mpml-click-args-type="boolean" click-args="false" style="display: none;">
+          <svg version="1.1" viewBox="0 0 36 36" width="100%">
+            <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-14"></use>
+            <path d="M11,11 C9.9,11 9,11.9 9,13 L9,23 C9,24.1 9.9,25 11,25 L25,25 C26.1,25 27,24.1 27,23 L27,13 C27,11.9 26.1,11 25,11 L11,11 Z M11,17 L14,17 L14,19 L11,19 L11,17 L11,17 Z M20,23 L11,23 L11,21 L20,21 L20,23 L20,23 Z M25,23 L22,23 L22,21 L25,21 L25,23 L25,23 Z M25,19 L16,19 L16,17 L25,17 L25,19 L25,19 Z" fill="#fff" id="ytp-svg-14"></path>
+          </svg>
+        </button>
+        </span>
+        <!--
+        disabling the speed selection menu because this is not working on actionscript
+        -->
+        <div class="ytp-button" mpml-show="playbackRate | gte 0">
+          <button class="ytp-button ytp-settings-button" mpml-on-click="set" mpml-hide="menu" mpml-click-args="menu,topLevel" aria-haspopup="true" aria-owns="ytp-main-menu-id" title="Open Settings">
+            <svg version="1.1" viewBox="0 0 36 36" width="100%">
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-15"></use>
+              <path d="m 23.94,18.78 c .03,-0.25 .05,-0.51 .05,-0.78 0,-0.27 -0.02,-0.52 -0.05,-0.78 l 1.68,-1.32 c .15,-0.12 .19,-0.33 .09,-0.51 l -1.6,-2.76 c -0.09,-0.17 -0.31,-0.24 -0.48,-0.17 l -1.99,.8 c -0.41,-0.32 -0.86,-0.58 -1.35,-0.78 l -0.30,-2.12 c -0.02,-0.19 -0.19,-0.33 -0.39,-0.33 l -3.2,0 c -0.2,0 -0.36,.14 -0.39,.33 l -0.30,2.12 c -0.48,.2 -0.93,.47 -1.35,.78 l -1.99,-0.8 c -0.18,-0.07 -0.39,0 -0.48,.17 l -1.6,2.76 c -0.10,.17 -0.05,.39 .09,.51 l 1.68,1.32 c -0.03,.25 -0.05,.52 -0.05,.78 0,.26 .02,.52 .05,.78 l -1.68,1.32 c -0.15,.12 -0.19,.33 -0.09,.51 l 1.6,2.76 c .09,.17 .31,.24 .48,.17 l 1.99,-0.8 c .41,.32 .86,.58 1.35,.78 l .30,2.12 c .02,.19 .19,.33 .39,.33 l 3.2,0 c .2,0 .36,-0.14 .39,-0.33 l .30,-2.12 c .48,-0.2 .93,-0.47 1.35,-0.78 l 1.99,.8 c .18,.07 .39,0 .48,-0.17 l 1.6,-2.76 c .09,-0.17 .05,-0.39 -0.09,-0.51 l -1.68,-1.32 0,0 z m -5.94,2.01 c -1.54,0 -2.8,-1.25 -2.8,-2.8 0,-1.54 1.25,-2.8 2.8,-2.8 1.54,0 2.8,1.25 2.8,2.8 0,1.54 -1.25,2.8 -2.8,2.8 l 0,0 z" fill="#fff" id="ytp-svg-15"></path>
+            </svg>
+          </button>
+          <button class="ytp-button ytp-settings-button ytp-settings-close" mpml-show="menu" mpml-on-click="set" mpml-click-args="menu," aria-haspopup="true" aria-owns="ytp-main-menu-id" title="Close Settings" style="display: none;">
+            <svg version="1.1" viewBox="0 0 36 36" width="100%">
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-15"></use>
+              <path d="m 23.94,18.78 c .03,-0.25 .05,-0.51 .05,-0.78 0,-0.27 -0.02,-0.52 -0.05,-0.78 l 1.68,-1.32 c .15,-0.12 .19,-0.33 .09,-0.51 l -1.6,-2.76 c -0.09,-0.17 -0.31,-0.24 -0.48,-0.17 l -1.99,.8 c -0.41,-0.32 -0.86,-0.58 -1.35,-0.78 l -0.30,-2.12 c -0.02,-0.19 -0.19,-0.33 -0.39,-0.33 l -3.2,0 c -0.2,0 -0.36,.14 -0.39,.33 l -0.30,2.12 c -0.48,.2 -0.93,.47 -1.35,.78 l -1.99,-0.8 c -0.18,-0.07 -0.39,0 -0.48,.17 l -1.6,2.76 c -0.10,.17 -0.05,.39 .09,.51 l 1.68,1.32 c -0.03,.25 -0.05,.52 -0.05,.78 0,.26 .02,.52 .05,.78 l -1.68,1.32 c -0.15,.12 -0.19,.33 -0.09,.51 l 1.6,2.76 c .09,.17 .31,.24 .48,.17 l 1.99,-0.8 c .41,.32 .86,.58 1.35,.78 l .30,2.12 c .02,.19 .19,.33 .39,.33 l 3.2,0 c .2,0 .36,-0.14 .39,-0.33 l .30,-2.12 c .48,-0.2 .93,-0.47 1.35,-0.78 l 1.99,.8 c .18,.07 .39,0 .48,-0.17 l 1.6,-2.76 c .09,-0.17 .05,-0.39 -0.09,-0.51 l -1.68,-1.32 0,0 z m -5.94,2.01 c -1.54,0 -2.8,-1.25 -2.8,-2.8 0,-1.54 1.25,-2.8 2.8,-2.8 1.54,0 2.8,1.25 2.8,2.8 0,1.54 -1.25,2.8 -2.8,2.8 l 0,0 z" fill="#fff" id="ytp-svg-15"></path>
+            </svg>
+          </button>
+        </div>
+        <button class="ytp-multicam-button ytp-button" title="Switch camera" aria-haspopup="true" style="display: none;">
+          <svg version="1.1" viewBox="0 0 36 36" width="100%">
+            <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-16"></use>
+            <path d="M 26,10 22.83,10 21,8 15,8 13.17,10 10,10 c -1.1,0 -2,.9 -2,2 l 0,12 c 0,1.1 .9,2 2,2 l 16,0 c 1.1,0 2,-0.9 2,-2 l 0,-12 c 0,-1.1 -0.9,-2 -2,-2 l 0,0 z m -5,11.5 0,-2.5 -6,0 0,2.5 -3.5,-3.5 3.5,-3.5 0,2.5 6,0 0,-2.5 3.5,3.5 -3.5,3.5 0,0 z" fill="#fff" id="ytp-svg-16"></path>
+          </svg>
+        </button>
+        <button class="ytp-size-button ytp-button" title="Cinema mode" style="display: none;">
+          <svg version="1.1" viewBox="0 0 36 36" width="100%">
+            <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-17"></use>
+            <path d="m 28,11 0,14 -20,0 0,-14 z m -18,2 16,0 0,10 -16,0 0,-10 z" fill="#fff" fill-rule="evenodd" id="ytp-svg-17"></path>
+          </svg>
+        </button>
+        <button class="ytp-remote-button ytp-button" title="Play on TV" aria-haspopup="true" style="display: none;">
+          <svg version="1.1" viewBox="0 0 36 36" width="100%">
+            <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-18"></use>
+            <path d="M27,9 L9,9 C7.9,9 7,9.9 7,11 L7,14 L9,14 L9,11 L27,11 L27,25 L20,25 L20,27 L27,27 C28.1,27 29,26.1 29,25 L29,11 C29,9.9 28.1,9 27,9 L27,9 Z M7,24 L7,27 L10,27 C10,25.34 8.66,24 7,24 L7,24 Z M7,20 L7,22 C9.76,22 12,24.24 12,27 L14,27 C14,23.13 10.87,20 7,20 L7,20 Z M7,16 L7,18 C11.97,18 16,22.03 16,27 L18,27 C18,20.92 13.07,16 7,16 L7,16 Z" fill="#fff" id="ytp-svg-18"></path>
+          </svg>
+        </button>
+        <button class="ytp-fullscreen-button ytp-button" title="Full screen" mpml-on-click="fullscreen" mpml-click-args="true" mpml-hide="isFullscreen" click-args="true">
+          <svg version="1.1" viewBox="0 0 36 36" width="100%">
+            <g class="ytp-fullscreen-button-corner-0">
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-19"></use>
+              <path class="ytp-svg-fill" d="m 10,16 2,0 0,-4 4,0 0,-2 L 10,10 l 0,6 0,0 z" id="ytp-svg-19"></path>
+            </g>
+            <g class="ytp-fullscreen-button-corner-1">
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-20"></use>
+              <path class="ytp-svg-fill" d="m 20,10 0,2 4,0 0,4 2,0 L 26,10 l -6,0 0,0 z" id="ytp-svg-20"></path>
+            </g>
+            <g class="ytp-fullscreen-button-corner-2">
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-21"></use>
+              <path class="ytp-svg-fill" d="m 24,24 -4,0 0,2 L 26,26 l 0,-6 -2,0 0,4 0,0 z" id="ytp-svg-21"></path>
+            </g>
+            <g class="ytp-fullscreen-button-corner-3">
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-22"></use>
+              <path class="ytp-svg-fill" d="M 12,20 10,20 10,26 l 6,0 0,-2 -4,0 0,-4 0,0 z" id="ytp-svg-22"></path>
+            </g>
+          </svg>
+        </button>
+        <button class="ytp-fullscreen-button ytp-button" title="Exit full screen" mpml-on-click="fullscreen" mpml-click-args="false" mpml-show="isFullscreen" click-args="false" style="display: none;">
+          <svg version="1.1" viewBox="0 0 36 36" width="100%">
+            <g class="ytp-fullscreen-button-corner-2">
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-40"></use>
+              <path class="ytp-svg-fill" d="m 14,14 -4,0 0,2 6,0 0,-6 -2,0 0,4 0,0 z" id="ytp-svg-40"></path>
+            </g>
+            <g class="ytp-fullscreen-button-corner-3">
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-41"></use>
+              <path class="ytp-svg-fill" d="m 22,14 0,-4 -2,0 0,6 6,0 0,-2 -4,0 0,0 z" id="ytp-svg-41"></path>
+            </g>
+            <g class="ytp-fullscreen-button-corner-0">
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-42"></use>
+              <path class="ytp-svg-fill" d="m 20,26 2,0 0,-4 4,0 0,-2 -6,0 0,6 0,0 z" id="ytp-svg-42"></path>
+            </g>
+            <g class="ytp-fullscreen-button-corner-1">
+              <use class="ytp-svg-shadow" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ytp-svg-43"></use>
+              <path class="ytp-svg-fill" d="m 10,22 4,0 0,4 2,0 0,-6 -6,0 0,2 0,0 z" id="ytp-svg-43"></path>
+            </g>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+</div><style id="fullScreenStyle">.full-screen-player {
+    width: 100% !important;
+    height: 100% !important;
+  }</style><iframe name="vdoFrame9113783314501310" style="width:100%;height:100%;border:none;max-width: 100%;z-index:-1" allowfullscreen="true" allow="encrypted-media" src="https://cdn-gab.vdocipher.com/playerAssets/1.4.5/embed/index.html" __idm_id__="609676289"></iframe></div></div>
+      </div>
+      <!-- ngIf: CurrentContent.type == 3||CurrentContent.type == 31 -->
+      <br>
+      <div class="panel panel-default" style="background: none; border: none;">
+        <div class="media v-middle ">
+          <div class="media-left">
+            <button class="btn btn-primary paper-shadow" ng-click="previous()" ng-disabled="!CurrentContent||previousContentIndex===null" disabled="disabled">
+              <i class="fa  fa-chevron-left"></i> Précédent</button>
+          </div>
+          <div class="media-body">
+          </div>
+          <div class="media-right">
+            <button class="btn btn-success paper-shadow" ng-click="next()" ng-disabled="!CurrentContent||nextContentIndex===null">Suivant
+              <i class="fa  fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div ng-show="CurrentContent.description.length > 0" class="" style="">
+              <h3>Description : </h3>
+              <p ng-bind-html="CurrentContent.description" class="ng-binding">Autour d'une fonction: définition-continuité-dérivation</p>
+            </div>
+            <div class="form-group row ng-hide" ng-show="CurrentContent.attachments.length">
+              <label class="col-sm-2 control-label">Pièces jointes</label>
+              <div class="col-sm-6 col-md-6">
+                <ul>
+                  <!-- ngRepeat: attachment in CurrentContent.attachments -->
+                </ul>
+              </div>
+            </div>
+            <!-- <div ng-if="CurrentContent.documentURL&&CurrentContent.documentURL.length">
+              <h3>Pièces jointes : </h3>
+              <a ng-if="doc.length>8" ng-repeat="doc in splitArray(CurrentContent.documentURL)  track by $index" class="btn btn-white btn-xs"
+                ng-href="{{GoTo(doc)}}" target="_blank">Download {{GetDocName(doc)}}</a>
+            </div> -->
+            <!-- ngIf: CurrentContent.Tags.length --><h3 ng-if="CurrentContent.Tags.length" class="ng-scope" style="">Les Tags :</h3><!-- end ngIf: CurrentContent.Tags.length -->
+            <!-- ngRepeat: tag in CurrentContent.Tags --><!-- ngIf: CurrentContent.Tags.length --><span ng-if="CurrentContent.Tags.length" class="badge badge-primary ng-binding ng-scope" ng-repeat="tag in CurrentContent.Tags" style=""> domaine-de-définition-d'une-fonction-continuité-d'une-fonction-en-un-point </span><!-- end ngIf: CurrentContent.Tags.length --><!-- end ngRepeat: tag in CurrentContent.Tags --><!-- ngIf: CurrentContent.Tags.length --><span ng-if="CurrentContent.Tags.length" class="badge badge-primary ng-binding ng-scope" ng-repeat="tag in CurrentContent.Tags"> Domaine-de-continuité-Nombre-dérivé-d'une-fonction-Approximation-affine-Tangente-a-une-courbe-en-un-point </span><!-- end ngIf: CurrentContent.Tags.length --><!-- end ngRepeat: tag in CurrentContent.Tags -->
+            <h3 class="ratingFontSizeRes ng-binding">L'évaluation courante : 80% / 100%</h3>
+            <div class="progress margin-none">
+              <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" ng-style="{'width': (rate * 100)/max + '%'}" style="width: 80%;">
+              </div>
+            </div>
+            <div>
+              <h3 class="ratingFontSizeRes">Votre Evaluation :</h3>
+              <span ng-mouseleave="reset()" ng-keydown="onKeydown($event)" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0" aria-valuetext="" style="color:gold; font-size:20px;" ng-click="getFinalRate()" ng-model="yourRate" max="max" read-only="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null" titles="['one','two','three']" aria-labelledby="default-rating" class="ng-isolate-scope ng-not-empty ng-valid">
+    <!-- ngRepeat: r in range track by $index --><span ng-repeat-start="r in range track by $index" class="sr-only ng-binding ng-scope">( )</span>
+    <i ng-repeat-end="" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star-empty" ng-class="$index < value &amp;&amp; (r.stateOn || 'glyphicon-star') || (r.stateOff || 'glyphicon-star-empty')" ng-attr-title="{{r.title}}" title="one"></i><!-- end ngRepeat: r in range track by $index --><span ng-repeat-start="r in range track by $index" class="sr-only ng-binding ng-scope">( )</span>
+    <i ng-repeat-end="" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star-empty" ng-class="$index < value &amp;&amp; (r.stateOn || 'glyphicon-star') || (r.stateOff || 'glyphicon-star-empty')" ng-attr-title="{{r.title}}" title="two"></i><!-- end ngRepeat: r in range track by $index --><span ng-repeat-start="r in range track by $index" class="sr-only ng-binding ng-scope">( )</span>
+    <i ng-repeat-end="" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star-empty" ng-class="$index < value &amp;&amp; (r.stateOn || 'glyphicon-star') || (r.stateOff || 'glyphicon-star-empty')" ng-attr-title="{{r.title}}" title="three"></i><!-- end ngRepeat: r in range track by $index --><span ng-repeat-start="r in range track by $index" class="sr-only ng-binding ng-scope">( )</span>
+    <i ng-repeat-end="" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star-empty" ng-class="$index < value &amp;&amp; (r.stateOn || 'glyphicon-star') || (r.stateOff || 'glyphicon-star-empty')" ng-attr-title="{{r.title}}" title="4"></i><!-- end ngRepeat: r in range track by $index --><span ng-repeat-start="r in range track by $index" class="sr-only ng-binding ng-scope">( )</span>
+    <i ng-repeat-end="" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star-empty" ng-class="$index < value &amp;&amp; (r.stateOn || 'glyphicon-star') || (r.stateOff || 'glyphicon-star-empty')" ng-attr-title="{{r.title}}" title="5"></i><!-- end ngRepeat: r in range track by $index --><span ng-repeat-start="r in range track by $index" class="sr-only ng-binding ng-scope">( )</span>
+    <i ng-repeat-end="" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star-empty" ng-class="$index < value &amp;&amp; (r.stateOn || 'glyphicon-star') || (r.stateOff || 'glyphicon-star-empty')" ng-attr-title="{{r.title}}" title="6"></i><!-- end ngRepeat: r in range track by $index --><span ng-repeat-start="r in range track by $index" class="sr-only ng-binding ng-scope">( )</span>
+    <i ng-repeat-end="" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star-empty" ng-class="$index < value &amp;&amp; (r.stateOn || 'glyphicon-star') || (r.stateOff || 'glyphicon-star-empty')" ng-attr-title="{{r.title}}" title="7"></i><!-- end ngRepeat: r in range track by $index --><span ng-repeat-start="r in range track by $index" class="sr-only ng-binding ng-scope">( )</span>
+    <i ng-repeat-end="" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star-empty" ng-class="$index < value &amp;&amp; (r.stateOn || 'glyphicon-star') || (r.stateOff || 'glyphicon-star-empty')" ng-attr-title="{{r.title}}" title="8"></i><!-- end ngRepeat: r in range track by $index --><span ng-repeat-start="r in range track by $index" class="sr-only ng-binding ng-scope">( )</span>
+    <i ng-repeat-end="" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star-empty" ng-class="$index < value &amp;&amp; (r.stateOn || 'glyphicon-star') || (r.stateOff || 'glyphicon-star-empty')" ng-attr-title="{{r.title}}" title="9"></i><!-- end ngRepeat: r in range track by $index --><span ng-repeat-start="r in range track by $index" class="sr-only ng-binding ng-scope">( )</span>
+    <i ng-repeat-end="" ng-mouseenter="enter($index + 1)" ng-click="rate($index + 1)" class="glyphicon ng-scope glyphicon-star-empty" ng-class="$index < value &amp;&amp; (r.stateOn || 'glyphicon-star') || (r.stateOff || 'glyphicon-star-empty')" ng-attr-title="{{r.title}}" title="10"></i><!-- end ngRepeat: r in range track by $index -->
+</span>
+              <span class="label ng-binding ng-hide" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 &amp;&amp; percent<70, 'label-success': percent>=70}" ng-show="overStar &amp;&amp; !isReadonly">%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Comments Widget  -->
+      <!-- ngInclude:  --><ng-include src="'partials/Widgets/PupilCommentsWidget.html'" class="ng-scope" style=""><div ng-controller="CommentsController as up" class="ng-scope">
+  <!--<br>-->
+  <!--<h5 class="text-subhead-2 text-light">Les Commentaires : </h5>-->
+  <div class="page-section text-center">
+    <button class="btn btn-primary" ng-click="showComments()">
+            <span ng-show="!commentsIsShowed" class="">Afficher les commentaires</span>
+            <span ng-show="commentsIsShowed" class="ng-hide">Cacher les commentaires</span>
+        </button>
+  </div>
+  <!-- ngIf: commentsIsShowed -->
+  <!--<div ng-if="Comments.length==0">
+        <h3 class="modal-title" style="text-align:center">Aucun Commentaire dans ce cours. </h3>
+    </div>-->
+  <script type="text/ng-template" id="picture.html">
+    <div class="modal-header">
+      <h3 class="modal-title" style="center">
+        <center>Image agrandie </center>
+      </h3>
+      <br>
+      <br>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <center><img ng-src="{{imgsrc}}" id="bigimage" width="100%" height="100%">
+          <br>
+          <br>
+          <br>
+          <br>
+        </center>
+      </div>
+      <div class="panel-footer">
+        <center>
+          <button class="btn btn-success" ng-click="RotateImage('bigimage',1)">Tourner à gauche</button>
+          <button class="btn btn-success" ng-click="cancel()">Fermer</button>
+          <button class="btn btn-success" ng-click="RotateImage('bigimage',2)">Tourner à droite</button>
+        </center>
+      </div>
+    </div>
+  </script>
+  <script type="text/ng-template" id="fromCloud.html">
+    <style>
+      img {
+        border: solid 1px black;
+        margin: 10px;
+      }
+    </style>
+    <div class="modal-header">
+      <h3 class="modal-title" style="center">
+        <center>Select images </center>
+      </h3>
+      <br>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        <div ng-repeat="image in links">
+          <div class="span1" ng-click="selectImage(image)">
+            <img ng-if="image.selected" style="box-shadow: 0px 12px 22px 1px #333;" ng-src="{{image.link}}">
+            <img ng-if="!image.selected" style="" ng-src="{{image.link}}">
+          </div>
+        </div>
+      </div>
+      <div class="panel-footer">
+        <center>
+          <button class="btn btn-success" ng-click="cancel()">Fermer</button>
+          <button class="btn btn-success" ng-click="ok()">Appliquer</button>
+        </center>
+      </div>
+    </div>
+  </script>
+</div>
+</ng-include>
+    </div>
+    <div ng-class="bigLayout ? 'col-md-12' : 'col-md-4'" class="col-md-4">
+      <!-- Course WIdget -->
+      <!-- ngInclude:  --><ng-include ng-class="{'col-md-6':bigLayout}" src="'partials/Widgets/CourseWidget.html'" autoscroll="" class="ng-scope" style=""><div class="panel panel-default curriculum paper-shadow ng-scope" data-z="0.5">
+  <div class="panel-heading panel-heading-gray">
+    <h4 class="text-headline chapitreNameRes">Chapitre:
+      <strong class="ng-binding">05_Dérivabilité</strong>
+    </h4>
+  </div>
+  <div class="list-group" style="height: 440px !important;overflow-y: scroll !important;">
+    <!-- ngRepeat: content in Contents --><div class="list-group-item media chapitreCateRes ng-scope active" ng-class="{'active' : content.id == CurrentContent.id}" ng-repeat="content in Contents" ng-hide="isPupil==0 &amp;&amp; content.type==4" ng-show="content.visible">
+      <!-- ngIf: content.type != 6 --><div ng-click="verifyAccess(content, isPupil)" ng-if="content.type != 6" class="ng-scope">
+        <div class="media-left contentPaddRes">
+          <div class="text-crt ng-binding">1</div>
+          <!-- <div class="text-crt" ng-if="isPupil == 0">{{$index + 1}}</div> -->
+        </div>
+        <div class="media-body ng-binding">
+          <i ng-style="{'color' : content.isFree ? '#4caf50' : ''}" ng-class="contentIcon(content.type)" class="fa fa-play-circle"></i> première partie exercice 1 dérivée d'une fonction
+          <!-- ngIf: content.completed -->
+        </div>
+      </div><!-- end ngIf: content.type != 6 -->
+      <!-- ngIf: content.type == 6 -->
+    </div><!-- end ngRepeat: content in Contents --><div class="list-group-item media chapitreCateRes ng-scope" ng-class="{'active' : content.id == CurrentContent.id}" ng-repeat="content in Contents" ng-hide="isPupil==0 &amp;&amp; content.type==4" ng-show="content.visible">
+      <!-- ngIf: content.type != 6 --><div ng-click="verifyAccess(content, isPupil)" ng-if="content.type != 6" class="ng-scope">
+        <div class="media-left contentPaddRes">
+          <div class="text-crt ng-binding">2</div>
+          <!-- <div class="text-crt" ng-if="isPupil == 0">{{$index + 1}}</div> -->
+        </div>
+        <div class="media-body ng-binding">
+          <i ng-style="{'color' : content.isFree ? '#4caf50' : ''}" ng-class="contentIcon(content.type)" class="fa fa-play-circle"></i> deuxiéme partie exercice 1 fonction dérivé
+          <!-- ngIf: content.completed -->
+        </div>
+      </div><!-- end ngIf: content.type != 6 -->
+      <!-- ngIf: content.type == 6 -->
+    </div><!-- end ngRepeat: content in Contents --><div class="list-group-item media chapitreCateRes ng-scope" ng-class="{'active' : content.id == CurrentContent.id}" ng-repeat="content in Contents" ng-hide="isPupil==0 &amp;&amp; content.type==4" ng-show="content.visible">
+      <!-- ngIf: content.type != 6 --><div ng-click="verifyAccess(content, isPupil)" ng-if="content.type != 6" class="ng-scope">
+        <div class="media-left contentPaddRes">
+          <div class="text-crt ng-binding">3</div>
+          <!-- <div class="text-crt" ng-if="isPupil == 0">{{$index + 1}}</div> -->
+        </div>
+        <div class="media-body ng-binding">
+          <i ng-style="{'color' : content.isFree ? '#4caf50' : ''}" ng-class="contentIcon(content.type)" class="fa fa-play-circle"></i> exercice n 2
+          <!-- ngIf: content.completed -->
+        </div>
+      </div><!-- end ngIf: content.type != 6 -->
+      <!-- ngIf: content.type == 6 -->
+    </div><!-- end ngRepeat: content in Contents --><div class="list-group-item media chapitreCateRes ng-scope" ng-class="{'active' : content.id == CurrentContent.id}" ng-repeat="content in Contents" ng-hide="isPupil==0 &amp;&amp; content.type==4" ng-show="content.visible">
+      <!-- ngIf: content.type != 6 --><div ng-click="verifyAccess(content, isPupil)" ng-if="content.type != 6" class="ng-scope">
+        <div class="media-left contentPaddRes">
+          <div class="text-crt ng-binding">4</div>
+          <!-- <div class="text-crt" ng-if="isPupil == 0">{{$index + 1}}</div> -->
+        </div>
+        <div class="media-body ng-binding">
+          <i ng-style="{'color' : content.isFree ? '#4caf50' : ''}" ng-class="contentIcon(content.type)" class="fa fa-play-circle"></i> exercice n 3
+          <!-- ngIf: content.completed -->
+        </div>
+      </div><!-- end ngIf: content.type != 6 -->
+      <!-- ngIf: content.type == 6 -->
+    </div><!-- end ngRepeat: content in Contents -->
+  </div>
+</div></ng-include>
+      <!-- Subjects WIdget -->
+      <!-- ngInclude:  --><ng-include ng-class="{'col-md-6':bigLayout}" src="'partials/Widgets/SubjectsWidget.html'" autoscroll="" class="ng-scope"><div class="panel panel-default ng-scope" ng-show="MainSubjects.length">
+  <div class="panel-heading">
+    <h4 class="panel-title" style="font-weight: 600; font-size: 18px;">Matiéres</h4>
+  </div>
+  <div class="panel-body list-group">
+    <ul class="list-group list-group-menu">
+      <!-- ngRepeat: subject in MainSubjects --><!-- ngIf: subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: subject.Subject --><!-- end ngRepeat: subject in MainSubjects -->
+      <!-- ngRepeat: subject in MainSubjects --><!-- ngIf: !subject.Subject --><li class="list-group-item ng-scope" ng-if="!subject.Subject" ng-class="{'active' : currentSubject.id == subject.id }" ng-repeat="subject in MainSubjects">
+        <a class="link-text-color ng-binding" href="#takecourse/58" style="display:flex;line-height:36px;">
+          <div class="coursesListImg">
+            <img class="img" ng-src="https://www.dropbox.com/s/j2nd5u0h2ma21qz/1476449295713_Mat.png?raw=1" style="height:40px;margin-left:-15px;" src="https://www.dropbox.com/s/j2nd5u0h2ma21qz/1476449295713_Mat.png?raw=1">
+          </div>Maths
+        </a>
+      </li><!-- end ngIf: !subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: !subject.Subject --><li class="list-group-item ng-scope" ng-if="!subject.Subject" ng-class="{'active' : currentSubject.id == subject.id }" ng-repeat="subject in MainSubjects">
+        <a class="link-text-color ng-binding" href="#takecourse/59" style="display:flex;line-height:36px;">
+          <div class="coursesListImg">
+            <img class="img" ng-src="https://www.dropbox.com/s/e9jahblv9zbdgkp/1476449307501_phy.png?raw=1" style="height:40px;margin-left:-15px;" src="https://www.dropbox.com/s/e9jahblv9zbdgkp/1476449307501_phy.png?raw=1">
+          </div>Physique
+        </a>
+      </li><!-- end ngIf: !subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: !subject.Subject --><li class="list-group-item ng-scope" ng-if="!subject.Subject" ng-class="{'active' : currentSubject.id == subject.id }" ng-repeat="subject in MainSubjects">
+        <a class="link-text-color ng-binding" href="#takecourse/71" style="display:flex;line-height:36px;">
+          <div class="coursesListImg">
+            <img class="img" ng-src="https://www.dropbox.com/s/0zckg7sxm7s031p/1476449328902_chi.png?raw=1" style="height:40px;margin-left:-15px;" src="https://www.dropbox.com/s/0zckg7sxm7s031p/1476449328902_chi.png?raw=1">
+          </div>Chimie
+        </a>
+      </li><!-- end ngIf: !subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: !subject.Subject --><li class="list-group-item ng-scope" ng-if="!subject.Subject" ng-class="{'active' : currentSubject.id == subject.id }" ng-repeat="subject in MainSubjects">
+        <a class="link-text-color ng-binding" href="#takecourse/143" style="display:flex;line-height:36px;">
+          <div class="coursesListImg">
+            <img class="img" ng-src="https://www.dropbox.com/s/zy8gsovnvm1f1wf/1511513154761_mec_2.png?raw=1" style="height:40px;margin-left:-15px;" src="https://www.dropbox.com/s/zy8gsovnvm1f1wf/1511513154761_mec_2.png?raw=1">
+          </div>Mécanique
+        </a>
+      </li><!-- end ngIf: !subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: !subject.Subject --><li class="list-group-item ng-scope" ng-if="!subject.Subject" ng-class="{'active' : currentSubject.id == subject.id }" ng-repeat="subject in MainSubjects">
+        <a class="link-text-color ng-binding" href="#takecourse/161" style="display:flex;line-height:36px;">
+          <div class="coursesListImg">
+            <img class="img" ng-src="https://www.dropbox.com/s/rmiecr519ji4rqy/1511513236332_ele.png?raw=1" style="height:40px;margin-left:-15px;" src="https://www.dropbox.com/s/rmiecr519ji4rqy/1511513236332_ele.png?raw=1">
+          </div>Electrique
+        </a>
+      </li><!-- end ngIf: !subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: !subject.Subject --><li class="list-group-item ng-scope" ng-if="!subject.Subject" ng-class="{'active' : currentSubject.id == subject.id }" ng-repeat="subject in MainSubjects">
+        <a class="link-text-color ng-binding" href="#takecourse/60" style="display:flex;line-height:36px;">
+          <div class="coursesListImg">
+            <img class="img" ng-src="https://www.dropbox.com/s/aivs1v72t9slsi5/1476449319044_inf.png?raw=1" style="height:40px;margin-left:-15px;" src="https://www.dropbox.com/s/aivs1v72t9slsi5/1476449319044_inf.png?raw=1">
+          </div>Informatique
+        </a>
+      </li><!-- end ngIf: !subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: !subject.Subject --><li class="list-group-item ng-scope" ng-if="!subject.Subject" ng-class="{'active' : currentSubject.id == subject.id }" ng-repeat="subject in MainSubjects">
+        <a class="link-text-color ng-binding" href="#takecourse/83" style="display:flex;line-height:36px;">
+          <div class="coursesListImg">
+            <img class="img" ng-src="https://www.dropbox.com/s/fqx9favgfyiws86/1493306245199_frtoureiffel.png?raw=1" style="height:40px;margin-left:-15px;" src="https://www.dropbox.com/s/fqx9favgfyiws86/1493306245199_frtoureiffel.png?raw=1">
+          </div>Français
+        </a>
+      </li><!-- end ngIf: !subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: !subject.Subject --><li class="list-group-item ng-scope" ng-if="!subject.Subject" ng-class="{'active' : currentSubject.id == subject.id }" ng-repeat="subject in MainSubjects">
+        <a class="link-text-color ng-binding" href="#takecourse/138" style="display:flex;line-height:36px;">
+          <div class="coursesListImg">
+            <img class="img" ng-src="https://www.dropbox.com/s/q0zaywlbpyzoli4/1511513275057_angbigben.png?raw=1" style="height:40px;margin-left:-15px;" src="https://www.dropbox.com/s/q0zaywlbpyzoli4/1511513275057_angbigben.png?raw=1">
+          </div>Anglais
+        </a>
+      </li><!-- end ngIf: !subject.Subject --><!-- end ngRepeat: subject in MainSubjects --><!-- ngIf: !subject.Subject --><li class="list-group-item ng-scope" ng-if="!subject.Subject" ng-class="{'active' : currentSubject.id == subject.id }" ng-repeat="subject in MainSubjects">
+        <a class="link-text-color ng-binding" href="#takecourse/177" style="display:flex;line-height:36px;">
+          <div class="coursesListImg">
+            <img class="img" ng-src="https://www.dropbox.com/s/ai2f0cfypd04bd2/1509440786905_psy.png?raw=1" style="height:40px;margin-left:-15px;" src="https://www.dropbox.com/s/ai2f0cfypd04bd2/1509440786905_psy.png?raw=1">
+          </div>علم النفس
+        </a>
+      </li><!-- end ngIf: !subject.Subject --><!-- end ngRepeat: subject in MainSubjects -->
+    </ul>
+  </div>
+</div></ng-include>
+    </div>
+  </div>
+  <style type="text/css">
+    #one #two {
+      display: inline;
+    }
+
+    #one {
+      font-size: 25px;
+    }
+
+    .colorliked {
+      color: blue;
+    }
+
+    .colorunliked {
+      color: gray;
+    }
+  </style>
+</div></div><section class="footer-section loginFooterRes"><div class="container"><div class="row"><div class="col-sm-6 col-md-3"><ul class="list-unstyled"><li><a data-toggle="modal" href="#modal-contact" target="_self">Contact</a></li><li><a href="https://www.youtube.com/watch?v=LU06FaicB4Y&amp;list=PLUDUTmpExkvK1FWf2X4s2P0Z6-UiGb6wv&amp;index=3" target="_blank">Aide</a></li></ul></div><!-- ngIf: isBacPupil --><div class="col-sm-6 col-md-3"><ul class="list-unstyled"><li><div data-href="https://www.facebook.com/TakiAcademy" data-width="200" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true" class="fb-like fb_iframe_widget" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=1061040117317482&amp;container_width=270&amp;href=https%3A%2F%2Fwww.facebook.com%2FTakiAcademy&amp;layout=standard&amp;locale=fr_FR&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=small&amp;width=200"><span style="vertical-align: bottom; width: 225px; height: 78px;"><iframe name="f2c2f9030b35a1c" width="200px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.6/plugins/like.php?action=like&amp;app_id=1061040117317482&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Df2a1eca50359d1%26domain%3Dwww.takiacademy.com%26origin%3Dhttps%253A%252F%252Fwww.takiacademy.com%252Ff9a46fb354c4e8%26relation%3Dparent.parent&amp;container_width=270&amp;href=https%3A%2F%2Fwww.facebook.com%2FTakiAcademy&amp;layout=standard&amp;locale=fr_FR&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=small&amp;width=200" style="border: none; visibility: visible; width: 225px; height: 78px;" class=""></iframe></span></div></li></ul></div><div class="col-sm-6 col-md-3"><p><a href="https://www.facebook.com/TakiAcademy/" target="_blank" class="btn btn-xs btn-indigo-500">facebook</a><a href="https://www.youtube.com/TakiAcademy/" target="_blank" class="btn btn-xs btn-danger">youtube</a></p></div></div></div></section><!-- Footer--><footer class="footer"><strong class="footerInfoRes">Tél : +216 23 390 248 - Email : contact@takiacademy.com</strong></footer><!-- // Footer--><div id="modal-contact" ng-controller="contactCtrl" class="modal grow modal-backdrop-white fade ng-scope"><div class="modal-dialog modal-sm"><div class="v-cell"><div class="modal-content"><div class="modal-header"><button type="button" data-dismiss="modal" class="close"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button><h4 class="text-headline">Envoyer votre message</h4></div><div ng-show="sending" class="text-headline text-center ng-hide"><br>En Cours ...<br><br></div><div ng-hide="sending" class="modal-body"><!-- ngRepeat: err in errors --><strong style="color: #4caf50;" class="ng-binding"></strong><form name="contactForm" ng-submit="submitContact()" novalidate="" class="ng-pristine ng-invalid ng-invalid-required ng-valid-minlength"><!-- ngRepeat: type in msgTypes --><div ng-repeat="type in msgTypes" class="radio radio-info ng-scope"><input id="Proposition" type="radio" value="Proposition" name="contactType" ng-model="$parent.contactType" class="ng-pristine ng-untouched ng-valid ng-not-empty"><label for="Proposition" class="ng-binding">Proposition</label></div><!-- end ngRepeat: type in msgTypes --><div ng-repeat="type in msgTypes" class="radio radio-info ng-scope"><input id="Erreur" type="radio" value="Erreur" name="contactType" ng-model="$parent.contactType" class="ng-pristine ng-untouched ng-valid ng-not-empty"><label for="Erreur" class="ng-binding">Erreur</label></div><!-- end ngRepeat: type in msgTypes --><div ng-repeat="type in msgTypes" class="radio radio-info ng-scope"><input id="Renseignement" type="radio" value="Renseignement" name="contactType" ng-model="$parent.contactType" class="ng-pristine ng-untouched ng-valid ng-not-empty"><label for="Renseignement" class="ng-binding">Renseignement</label></div><!-- end ngRepeat: type in msgTypes --><div ng-class="{'has-material-error': contactForm.contactMessage.$invalid &amp;&amp; contactForm.contactMessage.$dirty, 'has-material-success': contactForm.contactMessage.$valid}" class="form-group form-control-material static required"><textarea id="contactMessage" cols="40" rows="10" name="contactMessage" ng-model="contactMessage" placeholder="Votre message" ng-minlength="8" required="" class="form-control required ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required ng-valid-minlength"></textarea><span class="ma-form-highlight"></span><span class="ma-form-bar"></span></div><div class="text-right"><button data-z="0.5" data-hover-z="1" data-animated="" ng-disabled="contactForm.$invalid" class="btn btn-primary relative paper-shadow" disabled="disabled">Envoyer</button></div></form></div></div></div></div></div><!-- Inline Script for colors and config objects; used by various external scripts;--><script type="text/ng-template" id="gettingstarted.html"><div class="modal-header" dir="auto">
+  <h3 class="modal-title" style="center"> ابدأ من هنا </h3>
+</div>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="panel panel-default">
+      <iframe width="853" height="480" src="https://www.youtube-nocookie.com/embed/Fqgy0ARKTZs" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div style="text-align:center">
+      <button class="btn btn-danger" type="button" ng-click="hideForEver()">لاتظهر هذا مرة أخرى</button>
+      <button class="btn btn-danger" type="button" ng-click="goHome()">الى الموقع</button>
+    </div>
+  </div>
+</div>
+</script><script type="text/ng-template" id="demands.html"><div class="panel panel-default">
+  <div class="panel-body">
+   <div class="st-content-inner">
+     <div class="lock-container" >
+        <div >
+          <div class="panel">
+           <form name="muform">
+            <div class="panel-heading" dir="auto">
+              <h1 class="h2 margin-none" ng-if="currentDemand.DemandType != 0"> {{currentDemand.InfoText }}</h1>
+              <h1 class="h2 margin-none" ng-if="currentDemand.DemandType == 0">Note de {{currentDemand.Subject.name }} pour {{currentDemand.MarkType.title}} :</h1>
+            </div>
+            <div class="panel-body">
+            <div class="form-group" ng-if="currentDemand.DemandType == 0">
+              <input type="number" step="0.25" class="form-control"  ng-model="currentDemand.Finalnote" required>
+            </div>
+              <div class="form-group" ng-if="currentDemand.DemandType == 2">
+                <label>Choisir Votre choix:</label>
+                <select class="selectpicker form-control" ng-model="currentDemand.FinalValue" required>
+                  <option value="">Sélectionnez votre choix</option>
+                  <option ng-repeat="item in currentDemand.choices.split('#/')" value="{{item}}">{{item}}</option>
+                </select>
+              </div>
+              <div class="form-group" ng-if="currentDemand.DemandType == 3">
+                <label>Choisir Vos choix :</label>
+                <div ng-repeat="item in MultiChoices">
+                  <input type="checkbox"  ng-model="item.isSelected" ng-change="ChangeChoice(item)" value="{{item.text}}">
+                  <span>{{item.text}}</span>
+                </div>
+              </div>
+
+               <div ng-if="currentDemand.DemandType == 1">
+                   <input type="text" class="form-control"  ng-model="currentDemand.FinalValue" required>
+                </div>
+            </div>
+            </form>
+            <div class="modal-header text-right">
+              <strong class="small">{{currentindex + 1}} / {{MyDemands.length}}</strong>
+              <a  ng-click="Next()" class="btn btn-primary" ng-disabled="!muform.$valid || ((selectedChoices==0)&&(currentDemand.DemandType == 3))"><span    ng-if="MyDemands.length == currentindex + 1">Finish</span>
+              <span    ng-if="MyDemands.length != currentindex + 1">Next</span></a>
+              <a  ng-click="Skip()" class="btn btn-primary" ng-if="currentDemand.isObligatory == false">Skip</a>
+              <a  ng-click="Close()" class="btn btn-primary" ng-if="switching == true">Close</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</script><script>var colors = {
+"danger-color": "#e74c3c",
+"success-color": "#81b53e",
+"warning-color": "#f0ad4e",
+"inverse-color": "#2c3e50",
+"info-color": "#2d7cb5",
+"default-color": "#6e7882",
+"default-light-color": "#cfd9db",
+"purple-color": "#9D8AC7",
+"mustard-color": "#d4d171",
+"lightred-color": "#e15258",
+"body-bg": "#f6f6f6"
+};
+var config = {
+  theme: "html",
+  skins: {
+    "default": {
+      "primary-color": "#42a5f5"
+    }
+  }
+};</script><script src="js/vendor/all.js"></script><div id="yUVknDa-1515349999205" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; position: fixed !important; border: 0px !important; min-height: 0px !important; min-width: 0px !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: auto !important; height: auto !important; z-index: 2000000000 !important; cursor: auto !important; float: none !important; bottom: 0px !important; right: 0px !important; left: auto !important; display: none;"><iframe id="A2v1c0e-1515349999209" src="about:blank" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: auto !important; left: auto !important; position: static !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 320px !important; height: 400px !important; z-index: 999999 !important; cursor: auto !important; float: none !important; display: none !important;"></iframe><iframe id="clNoOTd-1515349999213" src="about:blank" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; transition-property: none !important; z-index: 1000001 !important; cursor: auto !important; float: none !important; height: 40px !important; min-height: 40px !important; max-height: 40px !important; width: 320px !important; min-width: 320px !important; max-width: 320px !important; transform: rotate(0deg) translateZ(0px) !important; transform-origin: 0px center 0px !important; margin: 0px !important; top: auto !important; bottom: 0px !important; right: 10px !important; left: auto !important; display: block !important;"></iframe><iframe id="IXr87z8-1515349999213" src="about:blank" frameborder="0" scrolling="no" title="chat widget" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; position: fixed !important; border: 0px !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; display: none !important; z-index: 1000003 !important; cursor: auto !important; float: none !important; top: auto !important; bottom: 40px !important; right: 10px !important; left: auto !important; width: 320px !important; max-width: 320px !important; min-width: 320px !important; height: 37px !important; max-height: 37px !important; min-height: 37px !important;"></iframe><div id="Y3hvrge-1515349999204" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none rgb(255, 255, 255) !important; opacity: 0 !important; top: 1px !important; bottom: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: auto !important; height: 45px !important; display: block !important; z-index: 999997 !important; cursor: move !important; float: none !important; left: 96px !important; right: 0px !important;"></div><div id="EGmkakD-1515349999206" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 96px !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: w-resize !important; float: none !important;"></div><div id="IP48rMe-1515349999206" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 6px !important; height: 100% !important; display: block !important; z-index: 999998 !important; cursor: e-resize !important; float: none !important;"></div><div id="QJWteMe-1515349999207" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: n-resize !important; float: none !important;"></div><div id="Nmgqi1k-1515349999207" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: 0px !important; bottom: 0px !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 6px !important; display: block !important; z-index: 999998 !important; cursor: s-resize !important; float: none !important;"></div><div id="yO6u9Oq-1515349999208" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: nw-resize !important; float: none !important;"></div><div id="eluYhqZ-1515349999208" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: 0px !important; bottom: auto !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: ne-resize !important; float: none !important;"></div><div id="iSXzP0g-1515349999208" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: auto !important; bottom: 0px !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999998 !important; cursor: sw-resize !important; float: none !important;"></div><div id="xUANExn-1515349999208" class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: auto !important; right: 0px !important; bottom: 0px !important; left: auto !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 12px !important; height: 12px !important; display: block !important; z-index: 999999 !important; cursor: se-resize !important; float: none !important;"></div><div class="" style="outline: none !important; visibility: visible !important; resize: none !important; box-shadow: none !important; overflow: visible !important; background: none transparent !important; opacity: 1 !important; top: 0px !important; right: auto !important; bottom: auto !important; left: 0px !important; position: absolute !important; border: 0px !important; min-height: auto !important; min-width: auto !important; max-height: none !important; max-width: none !important; padding: 0px !important; margin: 0px !important; transition-property: none !important; transform: none !important; width: 100% !important; height: 100% !important; display: none !important; z-index: 1000001 !important; cursor: move !important; float: left !important;"></div></div><iframe src="about:blank" title="chat widget logging" style="display: none !important;"></iframe><script src="js/app/app.js"></script><script>$(document).on('click','.navbar-collapse.in',function(e) {
+    if( $(e.target).is('a') ) {
+        $(this).collapse('hide');
+    }
+});</script><script type="text/javascript" src="vendor/lodash/dist/lodash.min.js"></script><script type="text/javascript" src="otherlibs/tinymce-dist/tinymce.js"></script><script type="text/javascript" src="vendor/angular/angular.min.js"></script><script type="text/javascript" src="vendor/angular-ui-router/release/angular-ui-router.min.js"></script><script type="text/javascript" src="vendor/angular-sanitize/angular-sanitize.js"></script><script src="vendor/angular-animate/angular-animate.min.js"></script><script src="otherlibs/ui-bootstrap-tpls-1.3.2.js"></script><script src="vendor/angular-ui-notification/dist/angular-ui-notification.min.js"></script><script src="vendor/ng-letter-avatar/dist/ngletteravatar.min.js"></script><script src="vendor/ng-file-upload/ng-file-upload-shim.min.js"></script><script src="vendor/ng-file-upload/ng-file-upload.min.js"></script><script src="vendor/angular-ui-tinymce/src/tinymce.js"></script><script src="vendor/angular-i18n/angular-locale_fr-fr.js"></script><script src="vendor/ng-tags-input/ng-tags-input.min.js"></script><script src="vendor/moment/min/moment.min.js"></script><script src="vendor/angular-ui-calendar/src/calendar.js"></script><script src="vendor/fullcalendar/dist/fullcalendar.min.js"></script><script src="vendor/fullcalendar/dist/lang/fr.js"></script><script src="vendor/fullcalendar/dist/gcal.js"></script><script src="vendor/angular-moment/angular-moment.js"></script><script src="otherlibs/datetimepicker.js"></script><script src="otherlibs/datetimepicker.templates.js"></script><script src="vendor/vis/dist/vis.js"></script><script src="https://www.youtube.com/iframe_api"></script><script src="vendor/angular-youtube-mb/dist/angular-youtube-embed.min.js"></script><script src="vendor/angular-svg-round-progressbar/build/roundProgress.min.js"></script><script src="/vendor/angular-ui-select/dist/select.min.js"></script><script src="/vendor/angular-sanitize/angular-sanitize.min.js"></script><script src="/vendor/angular-translate/angular-translate.min.js"></script><script src="/vendor/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script><script src="/vendor/angular-validation-ghiscoding/dist/angular-validation.min.js"></script><script type="text/javascript" src="js/ngscripts/taConfig.js"></script><script type="text/javascript" src="js/ngscripts/tadivisionService.js"></script><script type="text/javascript" src="js/ngscripts/tafeatureService.js"></script><script type="text/javascript" src="js/ngscripts/taorderService.js"></script><script type="text/javascript" src="js/ngscripts/tayearstagesectionService.js"></script><script type="text/javascript" src="js/ngscripts/tasubscriptionService.js"></script><script type="text/javascript" src="js/ngscripts/tasubjectService.js"></script><script type="text/javascript" src="js/ngscripts/tacourseService.js"></script><script type="text/javascript" src="js/ngscripts/newsService.js"></script><script type="text/javascript" src="js/ngscripts/RatingService.js"></script><script type="text/javascript" src="js/ngscripts/TagsService.js"></script><script type="text/javascript" src="js/ngscripts/tacontentService.js"></script><script type="text/javascript" src="js/ngscripts/taNotificationService.js"></script><script type="text/javascript" src="js/ngscripts/tausersService.js"></script><script type="text/javascript" src="partials/InstructorProfile/profileService.js"></script><script type="text/javascript" src="js/ngscripts/DemandService.js"></script><script type="text/javascript" src="js/ngscripts/MarkTypeService.js"></script><script type="text/javascript" src="js/ngscripts/MarkService.js"></script><script type="text/javascript" src="js/ngscripts/MessagesService.js"></script><script type="text/javascript" src="partials/BookmarkedEvents/bookmarkService.js"></script><script type="text/javascript" src="partials/InstructorGestClass/GestClassService.js"></script><script type="text/javascript" src="js/ngscripts/TokenService.js"></script><script type="text/javascript" src="js/ngscripts/eventService.js"></script><script type="text/javascript" src="js/ngscripts/couponsService.js"></script><script type="text/javascript" src="js/ngscripts/pointService.js"></script><script type="text/javascript" src="partials/studentEvents/StudentEventsService.js"></script><script type="text/javascript" src="partials/QuizManagment/QuizService.js"></script><script type="text/javascript" src="js/ngscripts/calendarService.js"></script><script type="text/javascript" src="js/ngscripts/analyticsService.js"></script><script type="text/javascript" src="js/ngscripts/uploadService.js"></script><script type="text/javascript" src="js/ngscripts/affiliateService.js"></script><script type="text/javascript" src="partials/pupilPaths/pathsService.js"></script><script type="text/javascript" src="partials/countries/service.js"></script><script type="text/javascript" src="partials/states/service.js"></script><script type="text/javascript" src="partials/institutes/service.js"></script><script type="text/javascript" src="partials/transactions/service.js"></script><script type="text/javascript" src="partials/eventsHistory/service.js"></script><script type="text/javascript" src="partials/assignments/pupil/service.js"></script><script type="text/javascript" src="partials/eventsHistory/eventsHistoryController.js"></script><script type="text/javascript" src="partials/transactions/pupilTransactionsController.js"></script><script type="text/javascript" src="partials/visualizeCourse/visualizeCourse.controller.js"></script><script type="text/javascript" src="js/ngscripts/event.controller.js"></script><script type="text/javascript" src="js/ngscripts/takecourse.controller.js"></script><script type="text/javascript" src="js/ngscripts/alldivision.controller.js"></script><script type="text/javascript" src="js/ngscripts/mysubscriptions.controller.js"></script><script type="text/javascript" src="js/ngscripts/availablesub.controller.js"></script><script type="text/javascript" src="js/ngscripts/subscribe.controller.js"></script><script type="text/javascript" src="js/ngscripts/subscription.controller.js"></script><script type="text/javascript" src="js/ngscripts/pupilorders.controller.js"></script><script type="text/javascript" src="partials/Widgets/CommentsService.js"></script><script type="text/javascript" src="partials/Widgets/Comments.Controller.js"></script><script type="text/javascript" src="js/ngscripts/main.Controller.js"></script><script type="text/javascript" src="partials/PupilProfile/PupilProfile.Controller.js"></script><script type="text/javascript" src="js/ngscripts/pupilMessages.Controller.js"></script><script type="text/javascript" src="partials/SearchContent/searchContent.Controllers.js"></script><script type="text/javascript" src="partials/SearchContent/SearchService.js"></script><script type="text/javascript" src="partials/PublicProfile/PublicProfile.Controller.js"></script><script type="text/javascript" src="partials/studentEvents/studentEvents.Controller.js"></script><script type="text/javascript" src="partials/BookmarkedEvents/BookmarkedEvents.Controller.js"></script><script type="text/javascript" src="js/ngscripts/pupilPointTransferController.js"></script><script type="text/javascript" src="partials/PupilCorrections/PupilCorrections.Controller.js"></script><script type="text/javascript" src="js/ngscripts/PupilAffiliateController.js"></script><script type="text/javascript" src="js/ngscripts/PupilTokenController.js"></script><script type="text/javascript" src="partials/PupilQuiz/PupilQuiz.Controller.js"></script><script type="text/javascript" src="partials/Pupil/dashboardCtrl.js"></script><script type="text/javascript" src="partials/pupilPaths/pathsCtrl.js"></script><script type="text/javascript" src="partials/pupilPaths/pathCtrl.js"></script><script type="text/javascript" src="partials/assignments/pupil/assignments.controller.js"></script><script type="text/javascript" src="partials/assignments/pupil/assignment.controller.js"></script><script type="text/javascript" src="https://dev.vdocipher.com/playerAssets/1.4.5/vdo.js"></script><script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id;
+js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.6&appId=1061040117317482";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/lY4eZXm_YWu.js?version=42#channel=f9a46fb354c4e8&amp;origin=https%3A%2F%2Fwww.takiacademy.com" style="border: none;"></iframe></div></div></div></body></html>
